@@ -233,6 +233,26 @@ app.get('/getdata', function(req, res) {
 
 });
 
+app.get('/getalltriples', function(req, res) {
+
+	// console.log(req.body)
+	// console.log(req.query)
+
+	data = []
+	Object.keys(rawData).forEach((k)=>{
+		rawData[k].forEach((t)=>{
+			data.push([t.s,t.p,t.o])
+		})		
+
+	})
+
+
+    res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(data));
+
+});
+
+
 // app.post(/mydata)
 
 
