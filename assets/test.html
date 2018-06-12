@@ -251,14 +251,14 @@
 
 
         $.getJSON( "/getalltriples", { name: 'returnall'} )
-          .done(function( json ) {
+          .done(function( data ) {
 
 
             var triples = ""
 
 
 
-            for (var d in json){
+            for (var d in data){
                 var s = data[d][0];
                 var p = data[d][1];
                 var o = data[d][2];
