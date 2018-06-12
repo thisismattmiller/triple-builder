@@ -11,7 +11,7 @@
 
 <style>
     
-    #triples{
+    #triples, #triples-all{
         padding: 10px;
         background-color: whitesmoke;
         border-radius: 10px;
@@ -72,6 +72,7 @@
     <h3>All Triples</h3>
     <button id="cy-all">Refresh</button>
     <div id="cyAll"></div>
+    <code><pre><div id="triples-all"></div></pre></code>
 </div>
 
 
@@ -104,7 +105,7 @@
             }else{
                 triple = triple + '&lt;' + o + '&gt; . ';
             }
-            console.log(s,p,o);
+            
             triples = triples + triple + '<br>';
             postData.push({s:s,p:p,o:o})
 
@@ -135,7 +136,7 @@
 
 
     var dataChanged = function(){
-        console.log('changed')
+        
         saveData()
     }
 
@@ -145,7 +146,7 @@
 
         $.getJSON( "/cytodata", { name: window.username} )
           .done(function( json ) {
-            console.log( "JSON Data: >>>>>>>" ,json );
+
 
             var cy = window.cy = cytoscape({
                   container: document.getElementById('cy'),
@@ -182,7 +183,7 @@
             window.setTimeout(function(){
 
                 window.cy.resize()
-                console.log(cy)
+                
 
             },1000)
 
@@ -236,7 +237,8 @@
             window.setTimeout(function(){
 
                 window.cy.resize()
-                console.log(cy)
+                
+
 
             },1000)
 
@@ -245,6 +247,57 @@
             var err = textStatus + ", " + error;
             console.log( "Request Failed: " + err );
         });
+
+
+
+        $.getJSON( "/getalltriples", { name: 'returnall'} )
+          .done(function( json ) {
+
+
+            var triples = ""
+
+
+
+            for (var d in json){
+                var s = data[d][0];
+                var p = data[d][1];
+                var o = data[d][2];
+                triple = "";
+
+                if (s.trim().length === 0 || p.trim().length === 0 || o.trim().length === 0){
+                    continue
+                }
+
+                triple = '&lt;' + s + '&gt; ' + '&lt;' + p + '&gt; '
+
+                if (o.search('http://') === -1 && o.search('https://') === -1){
+                    // it is a literal
+                    o = o.replace(/"/g,"'");
+                    o = '"' + o + '"';
+                    triple = triple + ' ' + o + ' .';
+                }else{
+                    triple = triple + '&lt;' + o + '&gt; . ';
+                }
+                
+                triples = triples + triple + '<br>';
+                postData.push({s:s,p:p,o:o})
+
+
+            }
+            triples = '<h5>All Triples:</h5>' + triples
+            $("#triples-all").html(triples);
+
+
+
+
+          })
+          .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+
+
+
 
 
     }
