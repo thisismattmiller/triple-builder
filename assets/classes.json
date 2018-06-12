@@ -1,0 +1,3262 @@
+[
+  {
+    "id": "http://xmlns.com/foaf/0.1/LabelProperty",
+    "name": "FOAF - LabelProperty"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Person",
+    "name": "FOAF - Person"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Document",
+    "name": "FOAF - Document"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Organization",
+    "name": "FOAF - Organization"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Group",
+    "name": "FOAF - Group"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Agent",
+    "name": "FOAF - Agent"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Project",
+    "name": "FOAF - Project"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/Image",
+    "name": "FOAF - Image"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/PersonalProfileDocument",
+    "name": "FOAF - PersonalProfileDocument"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/OnlineAccount",
+    "name": "FOAF - Online Account"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/OnlineGamingAccount",
+    "name": "FOAF - Online Gaming Account"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount",
+    "name": "FOAF - Online E-commerce Account"
+  },
+  {
+    "id": "http://xmlns.com/foaf/0.1/OnlineChatAccount",
+    "name": "FOAF - Online Chat Account"
+  },
+  {
+    "id": "xxx#Concept",
+    "name": "SKOS - Concept"
+  },
+  {
+    "id": "xxx#ConceptScheme",
+    "name": "SKOS - Concept Scheme"
+  },
+  {
+    "id": "xxx#Collection",
+    "name": "SKOS - Collection"
+  },
+  {
+    "id": "xxx#OrderedCollecti",
+    "name": "SKOS - Ordered Collection"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Work",
+    "name": "Bibframe - Work"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Instance",
+    "name": "Bibframe - Instance"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Item",
+    "name": "Bibframe - Item"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Text",
+    "name": "Bibframe - Text"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Cartography",
+    "name": "Bibframe - Cartography"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Audio",
+    "name": "Bibframe - Audio"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/NotatedMusic",
+    "name": "Bibframe - NotatedMusic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/NotatedMovement",
+    "name": "Bibframe - NotatedMovement"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Dataset",
+    "name": "Bibframe - Dataset"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/StillImage",
+    "name": "Bibframe - StillImage"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MovingImage",
+    "name": "Bibframe - MovingImage"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Object",
+    "name": "Bibframe - Object"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Multimedia",
+    "name": "Bibframe - Multimedia"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MixedMaterial",
+    "name": "Bibframe - MixedMaterial"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Print",
+    "name": "Bibframe - Print"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Manuscript",
+    "name": "Bibframe - Manuscript"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Archival",
+    "name": "Bibframe - Archival"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Tactile",
+    "name": "Bibframe - Tactile"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Collection",
+    "name": "Bibframe - Collection"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Electronic",
+    "name": "Bibframe - Electronic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Note",
+    "name": "Bibframe - Note"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Identifier",
+    "name": "Bibframe - Identifier"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Unit",
+    "name": "Bibframe - Unit"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Role",
+    "name": "Bibframe - Role"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Source",
+    "name": "Bibframe - Source"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Status",
+    "name": "Bibframe - Status"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Agent",
+    "name": "Bibframe - Agent"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Person",
+    "name": "Bibframe - Person"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Family",
+    "name": "Bibframe - Family"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Organization",
+    "name": "Bibframe - Organization"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Jurisdiction",
+    "name": "Bibframe - Jurisdiction"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Meeting",
+    "name": "Bibframe - Meeting"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Topic",
+    "name": "Bibframe - Topic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Temporal",
+    "name": "Bibframe - Temporal"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Place",
+    "name": "Bibframe - Place"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Event",
+    "name": "Bibframe - Event"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Contribution",
+    "name": "Bibframe - Contribution"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Content",
+    "name": "Bibframe - Content"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Media",
+    "name": "Bibframe - Media"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Carrier",
+    "name": "Bibframe - Carrier"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/GenreForm",
+    "name": "Bibframe - GenreForm"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Title",
+    "name": "Bibframe - Title"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/VariantTitle",
+    "name": "Bibframe - VariantTitle"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/KeyTitle",
+    "name": "Bibframe - KeyTitle"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AbbreviatedTitle",
+    "name": "Bibframe - AbbreviatedTitle"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ParallelTitle",
+    "name": "Bibframe - ParallelTitle"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CollectiveTitle",
+    "name": "Bibframe - CollectiveTitle"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Language",
+    "name": "Bibframe - Language"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicMedium",
+    "name": "Bibframe - MusicMedium"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicInstrument",
+    "name": "Bibframe - MusicInstrument"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicEnsemble",
+    "name": "Bibframe - MusicEnsemble"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicVoice",
+    "name": "Bibframe - MusicVoice"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/GeographicCoverage",
+    "name": "Bibframe - GeographicCoverage"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/IntendedAudience",
+    "name": "Bibframe - IntendedAudience"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Arrangement",
+    "name": "Bibframe - Arrangement"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Dissertation",
+    "name": "Bibframe - Dissertation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Summary",
+    "name": "Bibframe - Summary"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Capture",
+    "name": "Bibframe - Capture"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Notation",
+    "name": "Bibframe - Notation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ContentAccessibility",
+    "name": "Bibframe - ContentAccessibility"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Script",
+    "name": "Bibframe - Script"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicNotation",
+    "name": "Bibframe - MusicNotation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/TactileNotation",
+    "name": "Bibframe - TactileNotation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MovementNotation",
+    "name": "Bibframe - MovementNotation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Illustration",
+    "name": "Bibframe - Illustration"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/SupplementaryContent",
+    "name": "Bibframe - SupplementaryContent"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ColorContent",
+    "name": "Bibframe - ColorContent"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/SoundContent",
+    "name": "Bibframe - SoundContent"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AspectRatio",
+    "name": "Bibframe - AspectRatio"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicFormat",
+    "name": "Bibframe - MusicFormat"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Scale",
+    "name": "Bibframe - Scale"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Cartographic",
+    "name": "Bibframe - Cartographic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Projection",
+    "name": "Bibframe - Projection"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Classification",
+    "name": "Bibframe - Classification"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ClassificationDdc",
+    "name": "Bibframe - ClassificationDdc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ClassificationLcc",
+    "name": "Bibframe - ClassificationLcc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ClassificationUdc",
+    "name": "Bibframe - ClassificationUdc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ClassificationNlm",
+    "name": "Bibframe - ClassificationNlm"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Frequency",
+    "name": "Bibframe - Frequency"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Issuance",
+    "name": "Bibframe - Issuance"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ProvisionActivity",
+    "name": "Bibframe - ProvisionActivity"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Distribution",
+    "name": "Bibframe - Distribution"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Manufacture",
+    "name": "Bibframe - Manufacture"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Publication",
+    "name": "Bibframe - Publication"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Production",
+    "name": "Bibframe - Production"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AcquisitionSource",
+    "name": "Bibframe - AcquisitionSource"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CopyrightRegistration",
+    "name": "Bibframe - CopyrightRegistration"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CoverArt",
+    "name": "Bibframe - CoverArt"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Review",
+    "name": "Bibframe - Review"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/TableOfContents",
+    "name": "Bibframe - TableOfContents"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Extent",
+    "name": "Bibframe - Extent"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/BaseMaterial",
+    "name": "Bibframe - BaseMaterial"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AppliedMaterial",
+    "name": "Bibframe - AppliedMaterial"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Emulsion",
+    "name": "Bibframe - Emulsion"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Mount",
+    "name": "Bibframe - Mount"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ProductionMethod",
+    "name": "Bibframe - ProductionMethod"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Generation",
+    "name": "Bibframe - Generation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Layout",
+    "name": "Bibframe - Layout"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/BookFormat",
+    "name": "Bibframe - BookFormat"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/FontSize",
+    "name": "Bibframe - FontSize"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Polarity",
+    "name": "Bibframe - Polarity"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ReductionRatio",
+    "name": "Bibframe - ReductionRatio"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/SoundCharacteristic",
+    "name": "Bibframe - SoundCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/RecordingMethod",
+    "name": "Bibframe - RecordingMethod"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/RecordingMedium",
+    "name": "Bibframe - RecordingMedium"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PlayingSpeed",
+    "name": "Bibframe - PlayingSpeed"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/GrooveCharacteristic",
+    "name": "Bibframe - GrooveCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/TrackConfig",
+    "name": "Bibframe - TrackConfig"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/TapeConfig",
+    "name": "Bibframe - TapeConfig"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PlaybackChannels",
+    "name": "Bibframe - PlaybackChannels"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PlaybackCharacteristic",
+    "name": "Bibframe - PlaybackCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ProjectionCharacteristic",
+    "name": "Bibframe - ProjectionCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PresentationFormat",
+    "name": "Bibframe - PresentationFormat"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ProjectionSpeed",
+    "name": "Bibframe - ProjectionSpeed"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/VideoCharacteristic",
+    "name": "Bibframe - VideoCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/VideoFormat",
+    "name": "Bibframe - VideoFormat"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/BroadcastStandard",
+    "name": "Bibframe - BroadcastStandard"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/DigitalCharacteristic",
+    "name": "Bibframe - DigitalCharacteristic"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/FileType",
+    "name": "Bibframe - FileType"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/EncodingFormat",
+    "name": "Bibframe - EncodingFormat"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/FileSize",
+    "name": "Bibframe - FileSize"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Resolution",
+    "name": "Bibframe - Resolution"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/RegionalEncoding",
+    "name": "Bibframe - RegionalEncoding"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/EncodedBitrate",
+    "name": "Bibframe - EncodedBitrate"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CartographicDataType",
+    "name": "Bibframe - CartographicDataType"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CartographicObjectType",
+    "name": "Bibframe - CartographicObjectType"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ObjectCount",
+    "name": "Bibframe - ObjectCount"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/SystemRequirement",
+    "name": "Bibframe - SystemRequirement"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/EnumerationAndChronology",
+    "name": "Bibframe - EnumerationAndChronology"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Enumeration",
+    "name": "Bibframe - Enumeration"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Chronology",
+    "name": "Bibframe - Chronology"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Sublocation",
+    "name": "Bibframe - Sublocation"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ShelfMark",
+    "name": "Bibframe - ShelfMark"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ShelfMarkDdc",
+    "name": "Bibframe - ShelfMarkDdc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ShelfMarkLcc",
+    "name": "Bibframe - ShelfMarkLcc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ShelfMarkUdc",
+    "name": "Bibframe - ShelfMarkUdc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ShelfMarkNlm",
+    "name": "Bibframe - ShelfMarkNlm"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/UsageAndAccessPolicy",
+    "name": "Bibframe - UsageAndAccessPolicy"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AccessPolicy",
+    "name": "Bibframe - AccessPolicy"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/UsePolicy",
+    "name": "Bibframe - UsePolicy"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/RetentionPolicy",
+    "name": "Bibframe - RetentionPolicy"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ImmediateAcquisition",
+    "name": "Bibframe - ImmediateAcquisition"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Ansi",
+    "name": "Bibframe - Ansi"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AudioIssueNumber",
+    "name": "Bibframe - AudioIssueNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AudioTake",
+    "name": "Bibframe - AudioTake"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Barcode",
+    "name": "Bibframe - Barcode"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Coden",
+    "name": "Bibframe - Coden"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/CopyrightNumber",
+    "name": "Bibframe - CopyrightNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/DissertationIdentifier",
+    "name": "Bibframe - DissertationIdentifier"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Doi",
+    "name": "Bibframe - Doi"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Ean",
+    "name": "Bibframe - Ean"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Fingerprint",
+    "name": "Bibframe - Fingerprint"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Gtin14Number",
+    "name": "Bibframe - Gtin14Number"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Hdl",
+    "name": "Bibframe - Hdl"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Isan",
+    "name": "Bibframe - Isan"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Isbn",
+    "name": "Bibframe - Isbn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Ismn",
+    "name": "Bibframe - Ismn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Isni",
+    "name": "Bibframe - Isni"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Iso",
+    "name": "Bibframe - Iso"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Isrc",
+    "name": "Bibframe - Isrc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Issn",
+    "name": "Bibframe - Issn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/IssnL",
+    "name": "Bibframe - IssnL"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Istc",
+    "name": "Bibframe - Istc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Iswc",
+    "name": "Bibframe - Iswc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/LcOverseasAcq",
+    "name": "Bibframe - LcOverseasAcq"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Lccn",
+    "name": "Bibframe - Lccn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Local",
+    "name": "Bibframe - Local"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MatrixNumber",
+    "name": "Bibframe - MatrixNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicDistributorNumber",
+    "name": "Bibframe - MusicDistributorNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicPlate",
+    "name": "Bibframe - MusicPlate"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/MusicPublisherNumber",
+    "name": "Bibframe - MusicPublisherNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Nbn",
+    "name": "Bibframe - Nbn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PostalRegistration",
+    "name": "Bibframe - PostalRegistration"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/PublisherNumber",
+    "name": "Bibframe - PublisherNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/ReportNumber",
+    "name": "Bibframe - ReportNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Sici",
+    "name": "Bibframe - Sici"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/StockNumber",
+    "name": "Bibframe - StockNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Strn",
+    "name": "Bibframe - Strn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/StudyNumber",
+    "name": "Bibframe - StudyNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Upc",
+    "name": "Bibframe - Upc"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/Urn",
+    "name": "Bibframe - Urn"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/VideoRecordingNumber",
+    "name": "Bibframe - VideoRecordingNumber"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/AdminMetadata",
+    "name": "Bibframe - AdminMetadata"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/DescriptionConventions",
+    "name": "Bibframe - DescriptionConventions"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/GenerationProcess",
+    "name": "Bibframe - GenerationProcess"
+  },
+  {
+    "id": "http://id.loc.gov/ontologies/bibframe/DescriptionAuthentication",
+    "name": "Bibframe - DescriptionAuthentication"
+  },
+  {
+    "id": "http://schema.org/LikeAction",
+    "name": "Schema.org - LikeAction"
+  },
+  {
+    "id": "http://schema.org/Museum",
+    "name": "Schema.org - Museum"
+  },
+  {
+    "id": "http://schema.org/TakeAction",
+    "name": "Schema.org - TakeAction"
+  },
+  {
+    "id": "http://schema.org/Mosque",
+    "name": "Schema.org - Mosque"
+  },
+  {
+    "id": "http://schema.org/SkiResort",
+    "name": "Schema.org - SkiResort"
+  },
+  {
+    "id": "http://schema.org/MovieClip",
+    "name": "Schema.org - MovieClip"
+  },
+  {
+    "id": "http://schema.org/Restaurant",
+    "name": "Schema.org - Restaurant"
+  },
+  {
+    "id": "http://schema.org/Taxi",
+    "name": "Schema.org - Taxi"
+  },
+  {
+    "id": "http://schema.org/QAPage",
+    "name": "Schema.org - QAPage"
+  },
+  {
+    "id": "http://schema.org/Electrician",
+    "name": "Schema.org - Electrician"
+  },
+  {
+    "id": "http://schema.org/Park",
+    "name": "Schema.org - Park"
+  },
+  {
+    "id": "http://schema.org/ShareAction",
+    "name": "Schema.org - ShareAction"
+  },
+  {
+    "id": "http://schema.org/PerformingArtsTheater",
+    "name": "Schema.org - PerformingArtsTheater"
+  },
+  {
+    "id": "http://schema.org/PoliceStation",
+    "name": "Schema.org - PoliceStation"
+  },
+  {
+    "id": "http://schema.org/SelfStorage",
+    "name": "Schema.org - SelfStorage"
+  },
+  {
+    "id": "http://schema.org/TelevisionStation",
+    "name": "Schema.org - TelevisionStation"
+  },
+  {
+    "id": "http://schema.org/ChildCare",
+    "name": "Schema.org - ChildCare"
+  },
+  {
+    "id": "http://schema.org/Pharmacy",
+    "name": "Schema.org - Pharmacy"
+  },
+  {
+    "id": "http://schema.org/WearAction",
+    "name": "Schema.org - WearAction"
+  },
+  {
+    "id": "http://schema.org/ClothingStore",
+    "name": "Schema.org - ClothingStore"
+  },
+  {
+    "id": "http://schema.org/Series",
+    "name": "Schema.org - Series"
+  },
+  {
+    "id": "http://schema.org/SubwayStation",
+    "name": "Schema.org - SubwayStation"
+  },
+  {
+    "id": "http://schema.org/NightClub",
+    "name": "Schema.org - NightClub"
+  },
+  {
+    "id": "http://schema.org/WPSideBar",
+    "name": "Schema.org - WPSideBar"
+  },
+  {
+    "id": "http://schema.org/Pond",
+    "name": "Schema.org - Pond"
+  },
+  {
+    "id": "http://schema.org/EmploymentAgency",
+    "name": "Schema.org - EmploymentAgency"
+  },
+  {
+    "id": "http://schema.org/Zoo",
+    "name": "Schema.org - Zoo"
+  },
+  {
+    "id": "http://schema.org/InstallAction",
+    "name": "Schema.org - InstallAction"
+  },
+  {
+    "id": "http://schema.org/ReadAction",
+    "name": "Schema.org - ReadAction"
+  },
+  {
+    "id": "http://schema.org/TrainReservation",
+    "name": "Schema.org - TrainReservation"
+  },
+  {
+    "id": "http://schema.org/MusicVideoObject",
+    "name": "Schema.org - MusicVideoObject"
+  },
+  {
+    "id": "http://schema.org/Code",
+    "name": "Schema.org - Code"
+  },
+  {
+    "id": "http://schema.org/Crematorium",
+    "name": "Schema.org - Crematorium"
+  },
+  {
+    "id": "http://schema.org/HardwareStore",
+    "name": "Schema.org - HardwareStore"
+  },
+  {
+    "id": "http://schema.org/EducationEvent",
+    "name": "Schema.org - EducationEvent"
+  },
+  {
+    "id": "http://schema.org/BookSeries",
+    "name": "Schema.org - BookSeries"
+  },
+  {
+    "id": "http://schema.org/ImageGallery",
+    "name": "Schema.org - ImageGallery"
+  },
+  {
+    "id": "http://schema.org/Embassy",
+    "name": "Schema.org - Embassy"
+  },
+  {
+    "id": "http://schema.org/GolfCourse",
+    "name": "Schema.org - GolfCourse"
+  },
+  {
+    "id": "http://schema.org/JewelryStore",
+    "name": "Schema.org - JewelryStore"
+  },
+  {
+    "id": "http://schema.org/GovernmentOrganization",
+    "name": "Schema.org - GovernmentOrganization"
+  },
+  {
+    "id": "http://schema.org/RadioClip",
+    "name": "Schema.org - RadioClip"
+  },
+  {
+    "id": "http://schema.org/Cemetery",
+    "name": "Schema.org - Cemetery"
+  },
+  {
+    "id": "http://schema.org/BusinessEvent",
+    "name": "Schema.org - BusinessEvent"
+  },
+  {
+    "id": "http://schema.org/Physician",
+    "name": "Schema.org - Physician"
+  },
+  {
+    "id": "http://schema.org/OutletStore",
+    "name": "Schema.org - OutletStore"
+  },
+  {
+    "id": "http://schema.org/CheckAction",
+    "name": "Schema.org - CheckAction"
+  },
+  {
+    "id": "http://schema.org/Volcano",
+    "name": "Schema.org - Volcano"
+  },
+  {
+    "id": "http://schema.org/DepositAccount",
+    "name": "Schema.org - DepositAccount"
+  },
+  {
+    "id": "http://schema.org/ResumeAction",
+    "name": "Schema.org - ResumeAction"
+  },
+  {
+    "id": "http://schema.org/DefenceEstablishment",
+    "name": "Schema.org - DefenceEstablishment"
+  },
+  {
+    "id": "http://schema.org/UserPlays",
+    "name": "Schema.org - UserPlays"
+  },
+  {
+    "id": "http://schema.org/Bakery",
+    "name": "Schema.org - Bakery"
+  },
+  {
+    "id": "http://schema.org/Painting",
+    "name": "Schema.org - Painting"
+  },
+  {
+    "id": "http://schema.org/ItemPage",
+    "name": "Schema.org - ItemPage"
+  },
+  {
+    "id": "http://schema.org/DryCleaningOrLaundry",
+    "name": "Schema.org - DryCleaningOrLaundry"
+  },
+  {
+    "id": "http://schema.org/Season",
+    "name": "Schema.org - Season"
+  },
+  {
+    "id": "http://schema.org/AgreeAction",
+    "name": "Schema.org - AgreeAction"
+  },
+  {
+    "id": "http://schema.org/IgnoreAction",
+    "name": "Schema.org - IgnoreAction"
+  },
+  {
+    "id": "http://schema.org/SocialEvent",
+    "name": "Schema.org - SocialEvent"
+  },
+  {
+    "id": "http://schema.org/NoteDigitalDocument",
+    "name": "Schema.org - NoteDigitalDocument"
+  },
+  {
+    "id": "http://schema.org/RadioChannel",
+    "name": "Schema.org - RadioChannel"
+  },
+  {
+    "id": "http://schema.org/FurnitureStore",
+    "name": "Schema.org - FurnitureStore"
+  },
+  {
+    "id": "http://schema.org/IceCreamShop",
+    "name": "Schema.org - IceCreamShop"
+  },
+  {
+    "id": "http://schema.org/HVACBusiness",
+    "name": "Schema.org - HVACBusiness"
+  },
+  {
+    "id": "http://schema.org/MusicEvent",
+    "name": "Schema.org - MusicEvent"
+  },
+  {
+    "id": "http://schema.org/Continent",
+    "name": "Schema.org - Continent"
+  },
+  {
+    "id": "http://schema.org/MarryAction",
+    "name": "Schema.org - MarryAction"
+  },
+  {
+    "id": "http://schema.org/BowlingAlley",
+    "name": "Schema.org - BowlingAlley"
+  },
+  {
+    "id": "http://schema.org/WPAdBlock",
+    "name": "Schema.org - WPAdBlock"
+  },
+  {
+    "id": "http://schema.org/RejectAction",
+    "name": "Schema.org - RejectAction"
+  },
+  {
+    "id": "http://schema.org/GardenStore",
+    "name": "Schema.org - GardenStore"
+  },
+  {
+    "id": "http://schema.org/ShoeStore",
+    "name": "Schema.org - ShoeStore"
+  },
+  {
+    "id": "http://schema.org/Car",
+    "name": "Schema.org - Car"
+  },
+  {
+    "id": "http://schema.org/EventVenue",
+    "name": "Schema.org - EventVenue"
+  },
+  {
+    "id": "http://schema.org/ContactPage",
+    "name": "Schema.org - ContactPage"
+  },
+  {
+    "id": "http://schema.org/EmailMessage",
+    "name": "Schema.org - EmailMessage"
+  },
+  {
+    "id": "http://schema.org/CatholicChurch",
+    "name": "Schema.org - CatholicChurch"
+  },
+  {
+    "id": "http://schema.org/RadioSeason",
+    "name": "Schema.org - RadioSeason"
+  },
+  {
+    "id": "http://schema.org/NGO",
+    "name": "Schema.org - NGO"
+  },
+  {
+    "id": "http://schema.org/UserPlusOnes",
+    "name": "Schema.org - UserPlusOnes"
+  },
+  {
+    "id": "http://schema.org/DanceGroup",
+    "name": "Schema.org - DanceGroup"
+  },
+  {
+    "id": "http://schema.org/OceanBodyOfWater",
+    "name": "Schema.org - OceanBodyOfWater"
+  },
+  {
+    "id": "http://schema.org/UnRegisterAction",
+    "name": "Schema.org - UnRegisterAction"
+  },
+  {
+    "id": "http://schema.org/SeaBodyOfWater",
+    "name": "Schema.org - SeaBodyOfWater"
+  },
+  {
+    "id": "http://schema.org/ArriveAction",
+    "name": "Schema.org - ArriveAction"
+  },
+  {
+    "id": "http://schema.org/UserCheckins",
+    "name": "Schema.org - UserCheckins"
+  },
+  {
+    "id": "http://schema.org/MusicStore",
+    "name": "Schema.org - MusicStore"
+  },
+  {
+    "id": "http://schema.org/LiquorStore",
+    "name": "Schema.org - LiquorStore"
+  },
+  {
+    "id": "http://schema.org/AppendAction",
+    "name": "Schema.org - AppendAction"
+  },
+  {
+    "id": "http://schema.org/PaintAction",
+    "name": "Schema.org - PaintAction"
+  },
+  {
+    "id": "http://schema.org/CheckInAction",
+    "name": "Schema.org - CheckInAction"
+  },
+  {
+    "id": "http://schema.org/ApplyAction",
+    "name": "Schema.org - ApplyAction"
+  },
+  {
+    "id": "http://schema.org/Periodical",
+    "name": "Schema.org - Periodical"
+  },
+  {
+    "id": "http://schema.org/Bridge",
+    "name": "Schema.org - Bridge"
+  },
+  {
+    "id": "http://schema.org/TieAction",
+    "name": "Schema.org - TieAction"
+  },
+  {
+    "id": "http://schema.org/HousePainter",
+    "name": "Schema.org - HousePainter"
+  },
+  {
+    "id": "http://schema.org/ConfirmAction",
+    "name": "Schema.org - ConfirmAction"
+  },
+  {
+    "id": "http://schema.org/GatedResidenceCommunity",
+    "name": "Schema.org - GatedResidenceCommunity"
+  },
+  {
+    "id": "http://schema.org/State",
+    "name": "Schema.org - State"
+  },
+  {
+    "id": "http://schema.org/School",
+    "name": "Schema.org - School"
+  },
+  {
+    "id": "http://schema.org/RVPark",
+    "name": "Schema.org - RVPark"
+  },
+  {
+    "id": "http://schema.org/WantAction",
+    "name": "Schema.org - WantAction"
+  },
+  {
+    "id": "http://schema.org/Casino",
+    "name": "Schema.org - Casino"
+  },
+  {
+    "id": "http://schema.org/Conversation",
+    "name": "Schema.org - Conversation"
+  },
+  {
+    "id": "http://schema.org/Beach",
+    "name": "Schema.org - Beach"
+  },
+  {
+    "id": "http://schema.org/AutomatedTeller",
+    "name": "Schema.org - AutomatedTeller"
+  },
+  {
+    "id": "http://schema.org/Synagogue",
+    "name": "Schema.org - Synagogue"
+  },
+  {
+    "id": "http://schema.org/ToyStore",
+    "name": "Schema.org - ToyStore"
+  },
+  {
+    "id": "http://schema.org/MovingCompany",
+    "name": "Schema.org - MovingCompany"
+  },
+  {
+    "id": "http://schema.org/Sculpture",
+    "name": "Schema.org - Sculpture"
+  },
+  {
+    "id": "http://schema.org/AssignAction",
+    "name": "Schema.org - AssignAction"
+  },
+  {
+    "id": "http://schema.org/MiddleSchool",
+    "name": "Schema.org - MiddleSchool"
+  },
+  {
+    "id": "http://schema.org/ParkingFacility",
+    "name": "Schema.org - ParkingFacility"
+  },
+  {
+    "id": "http://schema.org/BikeStore",
+    "name": "Schema.org - BikeStore"
+  },
+  {
+    "id": "http://schema.org/LandmarksOrHistoricalBuildings",
+    "name": "Schema.org - LandmarksOrHistoricalBuildings"
+  },
+  {
+    "id": "http://schema.org/SuspendAction",
+    "name": "Schema.org - SuspendAction"
+  },
+  {
+    "id": "http://schema.org/Canal",
+    "name": "Schema.org - Canal"
+  },
+  {
+    "id": "http://schema.org/AccountingService",
+    "name": "Schema.org - AccountingService"
+  },
+  {
+    "id": "http://schema.org/InternetCafe",
+    "name": "Schema.org - InternetCafe"
+  },
+  {
+    "id": "http://schema.org/VisualArtsEvent",
+    "name": "Schema.org - VisualArtsEvent"
+  },
+  {
+    "id": "http://schema.org/AutoWash",
+    "name": "Schema.org - AutoWash"
+  },
+  {
+    "id": "http://schema.org/ListenAction",
+    "name": "Schema.org - ListenAction"
+  },
+  {
+    "id": "http://schema.org/TattooParlor",
+    "name": "Schema.org - TattooParlor"
+  },
+  {
+    "id": "http://schema.org/ConvenienceStore",
+    "name": "Schema.org - ConvenienceStore"
+  },
+  {
+    "id": "http://schema.org/Attorney",
+    "name": "Schema.org - Attorney"
+  },
+  {
+    "id": "http://schema.org/ProfilePage",
+    "name": "Schema.org - ProfilePage"
+  },
+  {
+    "id": "http://schema.org/SportsClub",
+    "name": "Schema.org - SportsClub"
+  },
+  {
+    "id": "http://schema.org/Locksmith",
+    "name": "Schema.org - Locksmith"
+  },
+  {
+    "id": "http://schema.org/PaymentService",
+    "name": "Schema.org - PaymentService"
+  },
+  {
+    "id": "http://schema.org/WatchAction",
+    "name": "Schema.org - WatchAction"
+  },
+  {
+    "id": "http://schema.org/SubscribeAction",
+    "name": "Schema.org - SubscribeAction"
+  },
+  {
+    "id": "http://schema.org/BedAndBreakfast",
+    "name": "Schema.org - BedAndBreakfast"
+  },
+  {
+    "id": "http://schema.org/City",
+    "name": "Schema.org - City"
+  },
+  {
+    "id": "http://schema.org/ChildrensEvent",
+    "name": "Schema.org - ChildrensEvent"
+  },
+  {
+    "id": "http://schema.org/Plumber",
+    "name": "Schema.org - Plumber"
+  },
+  {
+    "id": "http://schema.org/SaleEvent",
+    "name": "Schema.org - SaleEvent"
+  },
+  {
+    "id": "http://schema.org/Hospital",
+    "name": "Schema.org - Hospital"
+  },
+  {
+    "id": "http://schema.org/InsuranceAgency",
+    "name": "Schema.org - InsuranceAgency"
+  },
+  {
+    "id": "http://schema.org/GovernmentPermit",
+    "name": "Schema.org - GovernmentPermit"
+  },
+  {
+    "id": "http://schema.org/HowToStep",
+    "name": "Schema.org - HowToStep"
+  },
+  {
+    "id": "http://schema.org/DiscussionForumPosting",
+    "name": "Schema.org - DiscussionForumPosting"
+  },
+  {
+    "id": "http://schema.org/LakeBodyOfWater",
+    "name": "Schema.org - LakeBodyOfWater"
+  },
+  {
+    "id": "http://schema.org/VideoGallery",
+    "name": "Schema.org - VideoGallery"
+  },
+  {
+    "id": "http://schema.org/Florist",
+    "name": "Schema.org - Florist"
+  },
+  {
+    "id": "http://schema.org/Winery",
+    "name": "Schema.org - Winery"
+  },
+  {
+    "id": "http://schema.org/AutoRepair",
+    "name": "Schema.org - AutoRepair"
+  },
+  {
+    "id": "http://schema.org/ComedyClub",
+    "name": "Schema.org - ComedyClub"
+  },
+  {
+    "id": "http://schema.org/ExerciseGym",
+    "name": "Schema.org - ExerciseGym"
+  },
+  {
+    "id": "http://schema.org/ApartmentComplex",
+    "name": "Schema.org - ApartmentComplex"
+  },
+  {
+    "id": "http://schema.org/PresentationDigitalDocument",
+    "name": "Schema.org - PresentationDigitalDocument"
+  },
+  {
+    "id": "http://schema.org/UserTweets",
+    "name": "Schema.org - UserTweets"
+  },
+  {
+    "id": "http://schema.org/FilmAction",
+    "name": "Schema.org - FilmAction"
+  },
+  {
+    "id": "http://schema.org/EatAction",
+    "name": "Schema.org - EatAction"
+  },
+  {
+    "id": "http://schema.org/Barcode",
+    "name": "Schema.org - Barcode"
+  },
+  {
+    "id": "http://schema.org/DeleteAction",
+    "name": "Schema.org - DeleteAction"
+  },
+  {
+    "id": "http://schema.org/AmusementPark",
+    "name": "Schema.org - AmusementPark"
+  },
+  {
+    "id": "http://schema.org/TennisComplex",
+    "name": "Schema.org - TennisComplex"
+  },
+  {
+    "id": "http://schema.org/BookmarkAction",
+    "name": "Schema.org - BookmarkAction"
+  },
+  {
+    "id": "http://schema.org/WPHeader",
+    "name": "Schema.org - WPHeader"
+  },
+  {
+    "id": "http://schema.org/TelevisionChannel",
+    "name": "Schema.org - TelevisionChannel"
+  },
+  {
+    "id": "http://schema.org/BookStore",
+    "name": "Schema.org - BookStore"
+  },
+  {
+    "id": "http://schema.org/DrinkAction",
+    "name": "Schema.org - DrinkAction"
+  },
+  {
+    "id": "http://schema.org/ViewAction",
+    "name": "Schema.org - ViewAction"
+  },
+  {
+    "id": "http://schema.org/PrependAction",
+    "name": "Schema.org - PrependAction"
+  },
+  {
+    "id": "http://schema.org/DanceEvent",
+    "name": "Schema.org - DanceEvent"
+  },
+  {
+    "id": "http://schema.org/ReserveAction",
+    "name": "Schema.org - ReserveAction"
+  },
+  {
+    "id": "http://schema.org/FoodService",
+    "name": "Schema.org - FoodService"
+  },
+  {
+    "id": "http://schema.org/WPFooter",
+    "name": "Schema.org - WPFooter"
+  },
+  {
+    "id": "http://schema.org/FastFoodRestaurant",
+    "name": "Schema.org - FastFoodRestaurant"
+  },
+  {
+    "id": "http://schema.org/ScheduleAction",
+    "name": "Schema.org - ScheduleAction"
+  },
+  {
+    "id": "http://schema.org/LockerDelivery",
+    "name": "Schema.org - LockerDelivery"
+  },
+  {
+    "id": "http://schema.org/CancelAction",
+    "name": "Schema.org - CancelAction"
+  },
+  {
+    "id": "http://schema.org/Courthouse",
+    "name": "Schema.org - Courthouse"
+  },
+  {
+    "id": "http://schema.org/PetStore",
+    "name": "Schema.org - PetStore"
+  },
+  {
+    "id": "http://schema.org/CityHall",
+    "name": "Schema.org - CityHall"
+  },
+  {
+    "id": "http://schema.org/HobbyShop",
+    "name": "Schema.org - HobbyShop"
+  },
+  {
+    "id": "http://schema.org/Library",
+    "name": "Schema.org - Library"
+  },
+  {
+    "id": "http://schema.org/BusReservation",
+    "name": "Schema.org - BusReservation"
+  },
+  {
+    "id": "http://schema.org/NailSalon",
+    "name": "Schema.org - NailSalon"
+  },
+  {
+    "id": "http://schema.org/AboutPage",
+    "name": "Schema.org - AboutPage"
+  },
+  {
+    "id": "http://schema.org/Resort",
+    "name": "Schema.org - Resort"
+  },
+  {
+    "id": "http://schema.org/TaxiStand",
+    "name": "Schema.org - TaxiStand"
+  },
+  {
+    "id": "http://schema.org/MotorcycleRepair",
+    "name": "Schema.org - MotorcycleRepair"
+  },
+  {
+    "id": "http://schema.org/PublicSwimmingPool",
+    "name": "Schema.org - PublicSwimmingPool"
+  },
+  {
+    "id": "http://schema.org/AutoPartsStore",
+    "name": "Schema.org - AutoPartsStore"
+  },
+  {
+    "id": "http://schema.org/UserBlocks",
+    "name": "Schema.org - UserBlocks"
+  },
+  {
+    "id": "http://schema.org/Church",
+    "name": "Schema.org - Church"
+  },
+  {
+    "id": "http://schema.org/TravelAgency",
+    "name": "Schema.org - TravelAgency"
+  },
+  {
+    "id": "http://schema.org/QuoteAction",
+    "name": "Schema.org - QuoteAction"
+  },
+  {
+    "id": "http://schema.org/MovieRentalStore",
+    "name": "Schema.org - MovieRentalStore"
+  },
+  {
+    "id": "http://schema.org/ScholarlyArticle",
+    "name": "Schema.org - ScholarlyArticle"
+  },
+  {
+    "id": "http://schema.org/AutoDealer",
+    "name": "Schema.org - AutoDealer"
+  },
+  {
+    "id": "http://schema.org/Brewery",
+    "name": "Schema.org - Brewery"
+  },
+  {
+    "id": "http://schema.org/Reservoir",
+    "name": "Schema.org - Reservoir"
+  },
+  {
+    "id": "http://schema.org/HowToTip",
+    "name": "Schema.org - HowToTip"
+  },
+  {
+    "id": "http://schema.org/ArtGallery",
+    "name": "Schema.org - ArtGallery"
+  },
+  {
+    "id": "http://schema.org/RecyclingCenter",
+    "name": "Schema.org - RecyclingCenter"
+  },
+  {
+    "id": "http://schema.org/MobilePhoneStore",
+    "name": "Schema.org - MobilePhoneStore"
+  },
+  {
+    "id": "http://schema.org/LegislativeBuilding",
+    "name": "Schema.org - LegislativeBuilding"
+  },
+  {
+    "id": "http://schema.org/EventReservation",
+    "name": "Schema.org - EventReservation"
+  },
+  {
+    "id": "http://schema.org/ComputerStore",
+    "name": "Schema.org - ComputerStore"
+  },
+  {
+    "id": "http://schema.org/DrawAction",
+    "name": "Schema.org - DrawAction"
+  },
+  {
+    "id": "http://schema.org/Notary",
+    "name": "Schema.org - Notary"
+  },
+  {
+    "id": "http://schema.org/ProfessionalService",
+    "name": "Schema.org - ProfessionalService"
+  },
+  {
+    "id": "http://schema.org/TireShop",
+    "name": "Schema.org - TireShop"
+  },
+  {
+    "id": "http://schema.org/Hostel",
+    "name": "Schema.org - Hostel"
+  },
+  {
+    "id": "http://schema.org/TheaterEvent",
+    "name": "Schema.org - TheaterEvent"
+  },
+  {
+    "id": "http://schema.org/AutoRental",
+    "name": "Schema.org - AutoRental"
+  },
+  {
+    "id": "http://schema.org/BarOrPub",
+    "name": "Schema.org - BarOrPub"
+  },
+  {
+    "id": "http://schema.org/GasStation",
+    "name": "Schema.org - GasStation"
+  },
+  {
+    "id": "http://schema.org/Table",
+    "name": "Schema.org - Table"
+  },
+  {
+    "id": "http://schema.org/Waterfall",
+    "name": "Schema.org - Waterfall"
+  },
+  {
+    "id": "http://schema.org/CurrencyConversionService",
+    "name": "Schema.org - CurrencyConversionService"
+  },
+  {
+    "id": "http://schema.org/WholesaleStore",
+    "name": "Schema.org - WholesaleStore"
+  },
+  {
+    "id": "http://schema.org/TheaterGroup",
+    "name": "Schema.org - TheaterGroup"
+  },
+  {
+    "id": "http://schema.org/OfficeEquipmentStore",
+    "name": "Schema.org - OfficeEquipmentStore"
+  },
+  {
+    "id": "http://schema.org/ParcelService",
+    "name": "Schema.org - ParcelService"
+  },
+  {
+    "id": "http://schema.org/GroceryStore",
+    "name": "Schema.org - GroceryStore"
+  },
+  {
+    "id": "http://schema.org/AdultEntertainment",
+    "name": "Schema.org - AdultEntertainment"
+  },
+  {
+    "id": "http://schema.org/SiteNavigationElement",
+    "name": "Schema.org - SiteNavigationElement"
+  },
+  {
+    "id": "http://schema.org/BuddhistTemple",
+    "name": "Schema.org - BuddhistTemple"
+  },
+  {
+    "id": "http://schema.org/CheckoutPage",
+    "name": "Schema.org - CheckoutPage"
+  },
+  {
+    "id": "http://schema.org/TouristInformationCenter",
+    "name": "Schema.org - TouristInformationCenter"
+  },
+  {
+    "id": "http://schema.org/ElectronicsStore",
+    "name": "Schema.org - ElectronicsStore"
+  },
+  {
+    "id": "http://schema.org/ActivateAction",
+    "name": "Schema.org - ActivateAction"
+  },
+  {
+    "id": "http://schema.org/FireStation",
+    "name": "Schema.org - FireStation"
+  },
+  {
+    "id": "http://schema.org/CreditCard",
+    "name": "Schema.org - CreditCard"
+  },
+  {
+    "id": "http://schema.org/MeetingRoom",
+    "name": "Schema.org - MeetingRoom"
+  },
+  {
+    "id": "http://schema.org/Playground",
+    "name": "Schema.org - Playground"
+  },
+  {
+    "id": "http://schema.org/HomeGoodsStore",
+    "name": "Schema.org - HomeGoodsStore"
+  },
+  {
+    "id": "http://schema.org/DisagreeAction",
+    "name": "Schema.org - DisagreeAction"
+  },
+  {
+    "id": "http://schema.org/HairSalon",
+    "name": "Schema.org - HairSalon"
+  },
+  {
+    "id": "http://schema.org/CheckOutAction",
+    "name": "Schema.org - CheckOutAction"
+  },
+  {
+    "id": "http://schema.org/DeactivateAction",
+    "name": "Schema.org - DeactivateAction"
+  },
+  {
+    "id": "http://schema.org/RegisterAction",
+    "name": "Schema.org - RegisterAction"
+  },
+  {
+    "id": "http://schema.org/SpreadsheetDigitalDocument",
+    "name": "Schema.org - SpreadsheetDigitalDocument"
+  },
+  {
+    "id": "http://schema.org/Preschool",
+    "name": "Schema.org - Preschool"
+  },
+  {
+    "id": "http://schema.org/UserLikes",
+    "name": "Schema.org - UserLikes"
+  },
+  {
+    "id": "http://schema.org/PostOffice",
+    "name": "Schema.org - PostOffice"
+  },
+  {
+    "id": "http://schema.org/DownloadAction",
+    "name": "Schema.org - DownloadAction"
+  },
+  {
+    "id": "http://schema.org/CampingPitch",
+    "name": "Schema.org - CampingPitch"
+  },
+  {
+    "id": "http://schema.org/UserPageVisits",
+    "name": "Schema.org - UserPageVisits"
+  },
+  {
+    "id": "http://schema.org/PhotographAction",
+    "name": "Schema.org - PhotographAction"
+  },
+  {
+    "id": "http://schema.org/Hotel",
+    "name": "Schema.org - Hotel"
+  },
+  {
+    "id": "http://schema.org/RoofingContractor",
+    "name": "Schema.org - RoofingContractor"
+  },
+  {
+    "id": "http://schema.org/VideoGameClip",
+    "name": "Schema.org - VideoGameClip"
+  },
+  {
+    "id": "http://schema.org/DiscoverAction",
+    "name": "Schema.org - DiscoverAction"
+  },
+  {
+    "id": "http://schema.org/Float",
+    "name": "Schema.org - Float"
+  },
+  {
+    "id": "http://schema.org/MotorcycleDealer",
+    "name": "Schema.org - MotorcycleDealer"
+  },
+  {
+    "id": "http://schema.org/TextDigitalDocument",
+    "name": "Schema.org - TextDigitalDocument"
+  },
+  {
+    "id": "http://schema.org/RiverBodyOfWater",
+    "name": "Schema.org - RiverBodyOfWater"
+  },
+  {
+    "id": "http://schema.org/SearchResultsPage",
+    "name": "Schema.org - SearchResultsPage"
+  },
+  {
+    "id": "http://schema.org/StadiumOrArena",
+    "name": "Schema.org - StadiumOrArena"
+  },
+  {
+    "id": "http://schema.org/Mountain",
+    "name": "Schema.org - Mountain"
+  },
+  {
+    "id": "http://schema.org/Dentist",
+    "name": "Schema.org - Dentist"
+  },
+  {
+    "id": "http://schema.org/CollegeOrUniversity",
+    "name": "Schema.org - CollegeOrUniversity"
+  },
+  {
+    "id": "http://schema.org/ShoppingCenter",
+    "name": "Schema.org - ShoppingCenter"
+  },
+  {
+    "id": "http://schema.org/Festival",
+    "name": "Schema.org - Festival"
+  },
+  {
+    "id": "http://schema.org/ComedyEvent",
+    "name": "Schema.org - ComedyEvent"
+  },
+  {
+    "id": "http://schema.org/MensClothingStore",
+    "name": "Schema.org - MensClothingStore"
+  },
+  {
+    "id": "http://schema.org/PawnShop",
+    "name": "Schema.org - PawnShop"
+  },
+  {
+    "id": "http://schema.org/HinduTemple",
+    "name": "Schema.org - HinduTemple"
+  },
+  {
+    "id": "http://schema.org/LiteraryEvent",
+    "name": "Schema.org - LiteraryEvent"
+  },
+  {
+    "id": "http://schema.org/BeautySalon",
+    "name": "Schema.org - BeautySalon"
+  },
+  {
+    "id": "http://schema.org/ExhibitionEvent",
+    "name": "Schema.org - ExhibitionEvent"
+  },
+  {
+    "id": "http://schema.org/UserDownloads",
+    "name": "Schema.org - UserDownloads"
+  },
+  {
+    "id": "http://schema.org/BefriendAction",
+    "name": "Schema.org - BefriendAction"
+  },
+  {
+    "id": "http://schema.org/AnimalShelter",
+    "name": "Schema.org - AnimalShelter"
+  },
+  {
+    "id": "http://schema.org/SportingGoodsStore",
+    "name": "Schema.org - SportingGoodsStore"
+  },
+  {
+    "id": "http://schema.org/AutoBodyShop",
+    "name": "Schema.org - AutoBodyShop"
+  },
+  {
+    "id": "http://schema.org/BankOrCreditUnion",
+    "name": "Schema.org - BankOrCreditUnion"
+  },
+  {
+    "id": "http://schema.org/Aquarium",
+    "name": "Schema.org - Aquarium"
+  },
+  {
+    "id": "http://schema.org/CafeOrCoffeeShop",
+    "name": "Schema.org - CafeOrCoffeeShop"
+  },
+  {
+    "id": "http://schema.org/MusicVenue",
+    "name": "Schema.org - MusicVenue"
+  },
+  {
+    "id": "http://schema.org/Motel",
+    "name": "Schema.org - Motel"
+  },
+  {
+    "id": "http://schema.org/GeneralContractor",
+    "name": "Schema.org - GeneralContractor"
+  },
+  {
+    "id": "http://schema.org/OnDemandEvent",
+    "name": "Schema.org - OnDemandEvent"
+  },
+  {
+    "id": "http://schema.org/DepartmentStore",
+    "name": "Schema.org - DepartmentStore"
+  },
+  {
+    "id": "http://schema.org/HealthClub",
+    "name": "Schema.org - HealthClub"
+  },
+  {
+    "id": "http://schema.org/DepartAction",
+    "name": "Schema.org - DepartAction"
+  },
+  {
+    "id": "http://schema.org/DislikeAction",
+    "name": "Schema.org - DislikeAction"
+  },
+  {
+    "id": "http://schema.org/AcceptAction",
+    "name": "Schema.org - AcceptAction"
+  },
+  {
+    "id": "http://schema.org/ElementarySchool",
+    "name": "Schema.org - ElementarySchool"
+  },
+  {
+    "id": "http://schema.org/Campground",
+    "name": "Schema.org - Campground"
+  },
+  {
+    "id": "http://schema.org/RadioStation",
+    "name": "Schema.org - RadioStation"
+  },
+  {
+    "id": "http://schema.org/RadioEpisode",
+    "name": "Schema.org - RadioEpisode"
+  },
+  {
+    "id": "http://schema.org/HighSchool",
+    "name": "Schema.org - HighSchool"
+  },
+  {
+    "id": "http://schema.org/DaySpa",
+    "name": "Schema.org - DaySpa"
+  },
+  {
+    "id": "http://schema.org/ReplaceAction",
+    "name": "Schema.org - ReplaceAction"
+  },
+  {
+    "id": "http://schema.org/BoardingPolicyType",
+    "name": "Schema.org - BoardingPolicyType"
+  },
+  {
+    "id": "http://schema.org/HowToSupply",
+    "name": "Schema.org - HowToSupply"
+  },
+  {
+    "id": "http://schema.org/MusicComposition",
+    "name": "Schema.org - MusicComposition"
+  },
+  {
+    "id": "http://schema.org/ReactAction",
+    "name": "Schema.org - ReactAction"
+  },
+  {
+    "id": "http://schema.org/WebSite",
+    "name": "Schema.org - WebSite"
+  },
+  {
+    "id": "http://schema.org/DigitalDocument",
+    "name": "Schema.org - DigitalDocument"
+  },
+  {
+    "id": "http://schema.org/HowToTool",
+    "name": "Schema.org - HowToTool"
+  },
+  {
+    "id": "http://schema.org/BlogPosting",
+    "name": "Schema.org - BlogPosting"
+  },
+  {
+    "id": "http://schema.org/Person",
+    "name": "Schema.org - Person"
+  },
+  {
+    "id": "http://schema.org/MusicRelease",
+    "name": "Schema.org - MusicRelease"
+  },
+  {
+    "id": "http://schema.org/EngineSpecification",
+    "name": "Schema.org - EngineSpecification"
+  },
+  {
+    "id": "http://schema.org/MusicPlaylist",
+    "name": "Schema.org - MusicPlaylist"
+  },
+  {
+    "id": "http://schema.org/InteractionCounter",
+    "name": "Schema.org - InteractionCounter"
+  },
+  {
+    "id": "http://schema.org/URL",
+    "name": "Schema.org - URL"
+  },
+  {
+    "id": "http://schema.org/Permit",
+    "name": "Schema.org - Permit"
+  },
+  {
+    "id": "http://schema.org/Store",
+    "name": "Schema.org - Store"
+  },
+  {
+    "id": "http://schema.org/Review",
+    "name": "Schema.org - Review"
+  },
+  {
+    "id": "http://schema.org/ActionStatusType",
+    "name": "Schema.org - ActionStatusType"
+  },
+  {
+    "id": "http://schema.org/Invoice",
+    "name": "Schema.org - Invoice"
+  },
+  {
+    "id": "http://schema.org/MusicReleaseFormatType",
+    "name": "Schema.org - MusicReleaseFormatType"
+  },
+  {
+    "id": "http://schema.org/AggregateOffer",
+    "name": "Schema.org - AggregateOffer"
+  },
+  {
+    "id": "http://schema.org/GameServer",
+    "name": "Schema.org - GameServer"
+  },
+  {
+    "id": "http://schema.org/PropertyValueSpecification",
+    "name": "Schema.org - PropertyValueSpecification"
+  },
+  {
+    "id": "http://schema.org/ItemListOrderType",
+    "name": "Schema.org - ItemListOrderType"
+  },
+  {
+    "id": "http://schema.org/ProductModel",
+    "name": "Schema.org - ProductModel"
+  },
+  {
+    "id": "http://schema.org/MonetaryAmount",
+    "name": "Schema.org - MonetaryAmount"
+  },
+  {
+    "id": "http://schema.org/Airline",
+    "name": "Schema.org - Airline"
+  },
+  {
+    "id": "http://schema.org/PaymentChargeSpecification",
+    "name": "Schema.org - PaymentChargeSpecification"
+  },
+  {
+    "id": "http://schema.org/TipAction",
+    "name": "Schema.org - TipAction"
+  },
+  {
+    "id": "http://schema.org/CompoundPriceSpecification",
+    "name": "Schema.org - CompoundPriceSpecification"
+  },
+  {
+    "id": "http://schema.org/BankAccount",
+    "name": "Schema.org - BankAccount"
+  },
+  {
+    "id": "http://schema.org/EntertainmentBusiness",
+    "name": "Schema.org - EntertainmentBusiness"
+  },
+  {
+    "id": "http://schema.org/Reservation",
+    "name": "Schema.org - Reservation"
+  },
+  {
+    "id": "http://schema.org/ConsumeAction",
+    "name": "Schema.org - ConsumeAction"
+  },
+  {
+    "id": "http://schema.org/SportsTeam",
+    "name": "Schema.org - SportsTeam"
+  },
+  {
+    "id": "http://schema.org/SocialMediaPosting",
+    "name": "Schema.org - SocialMediaPosting"
+  },
+  {
+    "id": "http://schema.org/PeopleAudience",
+    "name": "Schema.org - PeopleAudience"
+  },
+  {
+    "id": "http://schema.org/PerformanceRole",
+    "name": "Schema.org - PerformanceRole"
+  },
+  {
+    "id": "http://schema.org/Accommodation",
+    "name": "Schema.org - Accommodation"
+  },
+  {
+    "id": "http://schema.org/Audience",
+    "name": "Schema.org - Audience"
+  },
+  {
+    "id": "http://schema.org/FoodEvent",
+    "name": "Schema.org - FoodEvent"
+  },
+  {
+    "id": "http://schema.org/BookFormatType",
+    "name": "Schema.org - BookFormatType"
+  },
+  {
+    "id": "http://schema.org/Rating",
+    "name": "Schema.org - Rating"
+  },
+  {
+    "id": "http://schema.org/DataType",
+    "name": "Schema.org - DataType"
+  },
+  {
+    "id": "http://schema.org/BroadcastService",
+    "name": "Schema.org - BroadcastService"
+  },
+  {
+    "id": "http://schema.org/AlignmentObject",
+    "name": "Schema.org - AlignmentObject"
+  },
+  {
+    "id": "http://schema.org/PaymentCard",
+    "name": "Schema.org - PaymentCard"
+  },
+  {
+    "id": "http://schema.org/PaymentMethod",
+    "name": "Schema.org - PaymentMethod"
+  },
+  {
+    "id": "http://schema.org/HomeAndConstructionBusiness",
+    "name": "Schema.org - HomeAndConstructionBusiness"
+  },
+  {
+    "id": "http://schema.org/TypeAndQuantityNode",
+    "name": "Schema.org - TypeAndQuantityNode"
+  },
+  {
+    "id": "http://schema.org/BuyAction",
+    "name": "Schema.org - BuyAction"
+  },
+  {
+    "id": "http://schema.org/LodgingBusiness",
+    "name": "Schema.org - LodgingBusiness"
+  },
+  {
+    "id": "http://schema.org/ReceiveAction",
+    "name": "Schema.org - ReceiveAction"
+  },
+  {
+    "id": "http://schema.org/RsvpAction",
+    "name": "Schema.org - RsvpAction"
+  },
+  {
+    "id": "http://schema.org/GeoShape",
+    "name": "Schema.org - GeoShape"
+  },
+  {
+    "id": "http://schema.org/MusicAlbum",
+    "name": "Schema.org - MusicAlbum"
+  },
+  {
+    "id": "http://schema.org/BorrowAction",
+    "name": "Schema.org - BorrowAction"
+  },
+  {
+    "id": "http://schema.org/BroadcastChannel",
+    "name": "Schema.org - BroadcastChannel"
+  },
+  {
+    "id": "http://schema.org/PublicationIssue",
+    "name": "Schema.org - PublicationIssue"
+  },
+  {
+    "id": "http://schema.org/GovernmentBuilding",
+    "name": "Schema.org - GovernmentBuilding"
+  },
+  {
+    "id": "http://schema.org/FindAction",
+    "name": "Schema.org - FindAction"
+  },
+  {
+    "id": "http://schema.org/LocalBusiness",
+    "name": "Schema.org - LocalBusiness"
+  },
+  {
+    "id": "http://schema.org/BusinessAudience",
+    "name": "Schema.org - BusinessAudience"
+  },
+  {
+    "id": "http://schema.org/Service",
+    "name": "Schema.org - Service"
+  },
+  {
+    "id": "http://schema.org/CableOrSatelliteService",
+    "name": "Schema.org - CableOrSatelliteService"
+  },
+  {
+    "id": "http://schema.org/VideoGame",
+    "name": "Schema.org - VideoGame"
+  },
+  {
+    "id": "http://schema.org/ClaimReview",
+    "name": "Schema.org - ClaimReview"
+  },
+  {
+    "id": "http://schema.org/RadioSeries",
+    "name": "Schema.org - RadioSeries"
+  },
+  {
+    "id": "http://schema.org/BedDetails",
+    "name": "Schema.org - BedDetails"
+  },
+  {
+    "id": "http://schema.org/Country",
+    "name": "Schema.org - Country"
+  },
+  {
+    "id": "http://schema.org/ContactPointOption",
+    "name": "Schema.org - ContactPointOption"
+  },
+  {
+    "id": "http://schema.org/Action",
+    "name": "Schema.org - Action"
+  },
+  {
+    "id": "http://schema.org/GeoCircle",
+    "name": "Schema.org - GeoCircle"
+  },
+  {
+    "id": "http://schema.org/IndividualProduct",
+    "name": "Schema.org - IndividualProduct"
+  },
+  {
+    "id": "http://schema.org/BreadcrumbList",
+    "name": "Schema.org - BreadcrumbList"
+  },
+  {
+    "id": "http://schema.org/GameServerStatus",
+    "name": "Schema.org - GameServerStatus"
+  },
+  {
+    "id": "http://schema.org/TechArticle",
+    "name": "Schema.org - TechArticle"
+  },
+  {
+    "id": "http://schema.org/SportsEvent",
+    "name": "Schema.org - SportsEvent"
+  },
+  {
+    "id": "http://schema.org/SendAction",
+    "name": "Schema.org - SendAction"
+  },
+  {
+    "id": "http://schema.org/SingleFamilyResidence",
+    "name": "Schema.org - SingleFamilyResidence"
+  },
+  {
+    "id": "http://schema.org/WebPage",
+    "name": "Schema.org - WebPage"
+  },
+  {
+    "id": "http://schema.org/Answer",
+    "name": "Schema.org - Answer"
+  },
+  {
+    "id": "http://schema.org/MovieTheater",
+    "name": "Schema.org - MovieTheater"
+  },
+  {
+    "id": "http://schema.org/Text",
+    "name": "Schema.org - Text"
+  },
+  {
+    "id": "http://schema.org/HotelRoom",
+    "name": "Schema.org - HotelRoom"
+  },
+  {
+    "id": "http://schema.org/WebApplication",
+    "name": "Schema.org - WebApplication"
+  },
+  {
+    "id": "http://schema.org/RentalCarReservation",
+    "name": "Schema.org - RentalCarReservation"
+  },
+  {
+    "id": "http://schema.org/TransferAction",
+    "name": "Schema.org - TransferAction"
+  },
+  {
+    "id": "http://schema.org/MobileApplication",
+    "name": "Schema.org - MobileApplication"
+  },
+  {
+    "id": "http://schema.org/LocationFeatureSpecification",
+    "name": "Schema.org - LocationFeatureSpecification"
+  },
+  {
+    "id": "http://schema.org/OwnershipInfo",
+    "name": "Schema.org - OwnershipInfo"
+  },
+  {
+    "id": "http://schema.org/UserComments",
+    "name": "Schema.org - UserComments"
+  },
+  {
+    "id": "http://schema.org/MusicAlbumReleaseType",
+    "name": "Schema.org - MusicAlbumReleaseType"
+  },
+  {
+    "id": "http://schema.org/Vehicle",
+    "name": "Schema.org - Vehicle"
+  },
+  {
+    "id": "http://schema.org/Intangible",
+    "name": "Schema.org - Intangible"
+  },
+  {
+    "id": "http://schema.org/PublicationVolume",
+    "name": "Schema.org - PublicationVolume"
+  },
+  {
+    "id": "http://schema.org/ReplyAction",
+    "name": "Schema.org - ReplyAction"
+  },
+  {
+    "id": "http://schema.org/VoteAction",
+    "name": "Schema.org - VoteAction"
+  },
+  {
+    "id": "http://schema.org/ParcelDelivery",
+    "name": "Schema.org - ParcelDelivery"
+  },
+  {
+    "id": "http://schema.org/RentAction",
+    "name": "Schema.org - RentAction"
+  },
+  {
+    "id": "http://schema.org/Apartment",
+    "name": "Schema.org - Apartment"
+  },
+  {
+    "id": "http://schema.org/Episode",
+    "name": "Schema.org - Episode"
+  },
+  {
+    "id": "http://schema.org/CollectionPage",
+    "name": "Schema.org - CollectionPage"
+  },
+  {
+    "id": "http://schema.org/ReservationPackage",
+    "name": "Schema.org - ReservationPackage"
+  },
+  {
+    "id": "http://schema.org/CommentAction",
+    "name": "Schema.org - CommentAction"
+  },
+  {
+    "id": "http://schema.org/MenuItem",
+    "name": "Schema.org - MenuItem"
+  },
+  {
+    "id": "http://schema.org/WinAction",
+    "name": "Schema.org - WinAction"
+  },
+  {
+    "id": "http://schema.org/FinancialService",
+    "name": "Schema.org - FinancialService"
+  },
+  {
+    "id": "http://schema.org/CommunicateAction",
+    "name": "Schema.org - CommunicateAction"
+  },
+  {
+    "id": "http://schema.org/EventStatusType",
+    "name": "Schema.org - EventStatusType"
+  },
+  {
+    "id": "http://schema.org/LoanOrCredit",
+    "name": "Schema.org - LoanOrCredit"
+  },
+  {
+    "id": "http://schema.org/AudioObject",
+    "name": "Schema.org - AudioObject"
+  },
+  {
+    "id": "http://schema.org/Brand",
+    "name": "Schema.org - Brand"
+  },
+  {
+    "id": "http://schema.org/PerformingGroup",
+    "name": "Schema.org - PerformingGroup"
+  },
+  {
+    "id": "http://schema.org/Demand",
+    "name": "Schema.org - Demand"
+  },
+  {
+    "id": "http://schema.org/ListItem",
+    "name": "Schema.org - ListItem"
+  },
+  {
+    "id": "http://schema.org/InteractAction",
+    "name": "Schema.org - InteractAction"
+  },
+  {
+    "id": "http://schema.org/WarrantyScope",
+    "name": "Schema.org - WarrantyScope"
+  },
+  {
+    "id": "http://schema.org/MusicAlbumProductionType",
+    "name": "Schema.org - MusicAlbumProductionType"
+  },
+  {
+    "id": "http://schema.org/Offer",
+    "name": "Schema.org - Offer"
+  },
+  {
+    "id": "http://schema.org/BusinessFunction",
+    "name": "Schema.org - BusinessFunction"
+  },
+  {
+    "id": "http://schema.org/Role",
+    "name": "Schema.org - Role"
+  },
+  {
+    "id": "http://schema.org/Organization",
+    "name": "Schema.org - Organization"
+  },
+  {
+    "id": "http://schema.org/MediaObject",
+    "name": "Schema.org - MediaObject"
+  },
+  {
+    "id": "http://schema.org/Order",
+    "name": "Schema.org - Order"
+  },
+  {
+    "id": "http://schema.org/DateTime",
+    "name": "Schema.org - DateTime"
+  },
+  {
+    "id": "http://schema.org/DataCatalog",
+    "name": "Schema.org - DataCatalog"
+  },
+  {
+    "id": "http://schema.org/Airport",
+    "name": "Schema.org - Airport"
+  },
+  {
+    "id": "http://schema.org/BusStation",
+    "name": "Schema.org - BusStation"
+  },
+  {
+    "id": "http://schema.org/ServiceChannel",
+    "name": "Schema.org - ServiceChannel"
+  },
+  {
+    "id": "http://schema.org/BroadcastEvent",
+    "name": "Schema.org - BroadcastEvent"
+  },
+  {
+    "id": "http://schema.org/TrackAction",
+    "name": "Schema.org - TrackAction"
+  },
+  {
+    "id": "http://schema.org/SearchAction",
+    "name": "Schema.org - SearchAction"
+  },
+  {
+    "id": "http://schema.org/AchieveAction",
+    "name": "Schema.org - AchieveAction"
+  },
+  {
+    "id": "http://schema.org/FlightReservation",
+    "name": "Schema.org - FlightReservation"
+  },
+  {
+    "id": "http://schema.org/PropertyValue",
+    "name": "Schema.org - PropertyValue"
+  },
+  {
+    "id": "http://schema.org/TaxiService",
+    "name": "Schema.org - TaxiService"
+  },
+  {
+    "id": "http://schema.org/Flight",
+    "name": "Schema.org - Flight"
+  },
+  {
+    "id": "http://schema.org/QuantitativeValue",
+    "name": "Schema.org - QuantitativeValue"
+  },
+  {
+    "id": "http://schema.org/PostalAddress",
+    "name": "Schema.org - PostalAddress"
+  },
+  {
+    "id": "http://schema.org/AddAction",
+    "name": "Schema.org - AddAction"
+  },
+  {
+    "id": "http://schema.org/InformAction",
+    "name": "Schema.org - InformAction"
+  },
+  {
+    "id": "http://schema.org/TVSeason",
+    "name": "Schema.org - TVSeason"
+  },
+  {
+    "id": "http://schema.org/EmergencyService",
+    "name": "Schema.org - EmergencyService"
+  },
+  {
+    "id": "http://schema.org/CreativeWorkSeason",
+    "name": "Schema.org - CreativeWorkSeason"
+  },
+  {
+    "id": "http://schema.org/UpdateAction",
+    "name": "Schema.org - UpdateAction"
+  },
+  {
+    "id": "http://schema.org/PlanAction",
+    "name": "Schema.org - PlanAction"
+  },
+  {
+    "id": "http://schema.org/CreateAction",
+    "name": "Schema.org - CreateAction"
+  },
+  {
+    "id": "http://schema.org/SomeProducts",
+    "name": "Schema.org - SomeProducts"
+  },
+  {
+    "id": "http://schema.org/GamePlayMode",
+    "name": "Schema.org - GamePlayMode"
+  },
+  {
+    "id": "http://schema.org/HowToDirection",
+    "name": "Schema.org - HowToDirection"
+  },
+  {
+    "id": "http://schema.org/GovernmentService",
+    "name": "Schema.org - GovernmentService"
+  },
+  {
+    "id": "http://schema.org/LegalService",
+    "name": "Schema.org - LegalService"
+  },
+  {
+    "id": "http://schema.org/AutomotiveBusiness",
+    "name": "Schema.org - AutomotiveBusiness"
+  },
+  {
+    "id": "http://schema.org/Language",
+    "name": "Schema.org - Language"
+  },
+  {
+    "id": "http://schema.org/MovieSeries",
+    "name": "Schema.org - MovieSeries"
+  },
+  {
+    "id": "http://schema.org/AskAction",
+    "name": "Schema.org - AskAction"
+  },
+  {
+    "id": "http://schema.org/AllocateAction",
+    "name": "Schema.org - AllocateAction"
+  },
+  {
+    "id": "http://schema.org/DataFeed",
+    "name": "Schema.org - DataFeed"
+  },
+  {
+    "id": "http://schema.org/OrderItem",
+    "name": "Schema.org - OrderItem"
+  },
+  {
+    "id": "http://schema.org/DigitalDocumentPermission",
+    "name": "Schema.org - DigitalDocumentPermission"
+  },
+  {
+    "id": "http://schema.org/TaxiReservation",
+    "name": "Schema.org - TaxiReservation"
+  },
+  {
+    "id": "http://schema.org/AggregateRating",
+    "name": "Schema.org - AggregateRating"
+  },
+  {
+    "id": "http://schema.org/EducationalOrganization",
+    "name": "Schema.org - EducationalOrganization"
+  },
+  {
+    "id": "http://schema.org/EndorseAction",
+    "name": "Schema.org - EndorseAction"
+  },
+  {
+    "id": "http://schema.org/FoodEstablishment",
+    "name": "Schema.org - FoodEstablishment"
+  },
+  {
+    "id": "http://schema.org/NewsArticle",
+    "name": "Schema.org - NewsArticle"
+  },
+  {
+    "id": "http://schema.org/BodyOfWater",
+    "name": "Schema.org - BodyOfWater"
+  },
+  {
+    "id": "http://schema.org/OrganizeAction",
+    "name": "Schema.org - OrganizeAction"
+  },
+  {
+    "id": "http://schema.org/AuthorizeAction",
+    "name": "Schema.org - AuthorizeAction"
+  },
+  {
+    "id": "http://schema.org/Ticket",
+    "name": "Schema.org - Ticket"
+  },
+  {
+    "id": "http://schema.org/TVEpisode",
+    "name": "Schema.org - TVEpisode"
+  },
+  {
+    "id": "http://schema.org/BusinessEntityType",
+    "name": "Schema.org - BusinessEntityType"
+  },
+  {
+    "id": "http://schema.org/VisualArtwork",
+    "name": "Schema.org - VisualArtwork"
+  },
+  {
+    "id": "http://schema.org/SteeringPositionValue",
+    "name": "Schema.org - SteeringPositionValue"
+  },
+  {
+    "id": "http://schema.org/ControlAction",
+    "name": "Schema.org - ControlAction"
+  },
+  {
+    "id": "http://schema.org/TVClip",
+    "name": "Schema.org - TVClip"
+  },
+  {
+    "id": "http://schema.org/LiveBlogPosting",
+    "name": "Schema.org - LiveBlogPosting"
+  },
+  {
+    "id": "http://schema.org/TouristAttraction",
+    "name": "Schema.org - TouristAttraction"
+  },
+  {
+    "id": "http://schema.org/JobPosting",
+    "name": "Schema.org - JobPosting"
+  },
+  {
+    "id": "http://schema.org/ScreeningEvent",
+    "name": "Schema.org - ScreeningEvent"
+  },
+  {
+    "id": "http://schema.org/Clip",
+    "name": "Schema.org - Clip"
+  },
+  {
+    "id": "http://schema.org/WarrantyPromise",
+    "name": "Schema.org - WarrantyPromise"
+  },
+  {
+    "id": "http://schema.org/Report",
+    "name": "Schema.org - Report"
+  },
+  {
+    "id": "http://schema.org/RestrictedDiet",
+    "name": "Schema.org - RestrictedDiet"
+  },
+  {
+    "id": "http://schema.org/AssessAction",
+    "name": "Schema.org - AssessAction"
+  },
+  {
+    "id": "http://schema.org/Menu",
+    "name": "Schema.org - Menu"
+  },
+  {
+    "id": "http://schema.org/OrganizationRole",
+    "name": "Schema.org - OrganizationRole"
+  },
+  {
+    "id": "http://schema.org/ImageObject",
+    "name": "Schema.org - ImageObject"
+  },
+  {
+    "id": "http://schema.org/LendAction",
+    "name": "Schema.org - LendAction"
+  },
+  {
+    "id": "http://schema.org/TVSeries",
+    "name": "Schema.org - TVSeries"
+  },
+  {
+    "id": "http://schema.org/OrderStatus",
+    "name": "Schema.org - OrderStatus"
+  },
+  {
+    "id": "http://schema.org/MusicGroup",
+    "name": "Schema.org - MusicGroup"
+  },
+  {
+    "id": "http://schema.org/Recipe",
+    "name": "Schema.org - Recipe"
+  },
+  {
+    "id": "http://schema.org/PlayAction",
+    "name": "Schema.org - PlayAction"
+  },
+  {
+    "id": "http://schema.org/PerformAction",
+    "name": "Schema.org - PerformAction"
+  },
+  {
+    "id": "http://schema.org/DataFeedItem",
+    "name": "Schema.org - DataFeedItem"
+  },
+  {
+    "id": "http://schema.org/Landform",
+    "name": "Schema.org - Landform"
+  },
+  {
+    "id": "http://schema.org/NutritionInformation",
+    "name": "Schema.org - NutritionInformation"
+  },
+  {
+    "id": "http://schema.org/LoseAction",
+    "name": "Schema.org - LoseAction"
+  },
+  {
+    "id": "http://schema.org/FinancialProduct",
+    "name": "Schema.org - FinancialProduct"
+  },
+  {
+    "id": "http://schema.org/Dataset",
+    "name": "Schema.org - Dataset"
+  },
+  {
+    "id": "http://schema.org/WriteAction",
+    "name": "Schema.org - WriteAction"
+  },
+  {
+    "id": "http://schema.org/PayAction",
+    "name": "Schema.org - PayAction"
+  },
+  {
+    "id": "http://schema.org/OrderAction",
+    "name": "Schema.org - OrderAction"
+  },
+  {
+    "id": "http://schema.org/APIReference",
+    "name": "Schema.org - APIReference"
+  },
+  {
+    "id": "http://schema.org/ExerciseAction",
+    "name": "Schema.org - ExerciseAction"
+  },
+  {
+    "id": "http://schema.org/HowTo",
+    "name": "Schema.org - HowTo"
+  },
+  {
+    "id": "http://schema.org/VideoObject",
+    "name": "Schema.org - VideoObject"
+  },
+  {
+    "id": "http://schema.org/UnitPriceSpecification",
+    "name": "Schema.org - UnitPriceSpecification"
+  },
+  {
+    "id": "http://schema.org/TrainTrip",
+    "name": "Schema.org - TrainTrip"
+  },
+  {
+    "id": "http://schema.org/VideoGameSeries",
+    "name": "Schema.org - VideoGameSeries"
+  },
+  {
+    "id": "http://schema.org/CookAction",
+    "name": "Schema.org - CookAction"
+  },
+  {
+    "id": "http://schema.org/InvestmentOrDeposit",
+    "name": "Schema.org - InvestmentOrDeposit"
+  },
+  {
+    "id": "http://schema.org/ReturnAction",
+    "name": "Schema.org - ReturnAction"
+  },
+  {
+    "id": "http://schema.org/HowToSection",
+    "name": "Schema.org - HowToSection"
+  },
+  {
+    "id": "http://schema.org/BusTrip",
+    "name": "Schema.org - BusTrip"
+  },
+  {
+    "id": "http://schema.org/GenderType",
+    "name": "Schema.org - GenderType"
+  },
+  {
+    "id": "http://schema.org/Article",
+    "name": "Schema.org - Article"
+  },
+  {
+    "id": "http://schema.org/DeliveryChargeSpecification",
+    "name": "Schema.org - DeliveryChargeSpecification"
+  },
+  {
+    "id": "http://schema.org/Room",
+    "name": "Schema.org - Room"
+  },
+  {
+    "id": "http://schema.org/PriceSpecification",
+    "name": "Schema.org - PriceSpecification"
+  },
+  {
+    "id": "http://schema.org/DayOfWeek",
+    "name": "Schema.org - DayOfWeek"
+  },
+  {
+    "id": "http://schema.org/FoodEstablishmentReservation",
+    "name": "Schema.org - FoodEstablishmentReservation"
+  },
+  {
+    "id": "http://schema.org/AdministrativeArea",
+    "name": "Schema.org - AdministrativeArea"
+  },
+  {
+    "id": "http://schema.org/House",
+    "name": "Schema.org - House"
+  },
+  {
+    "id": "http://schema.org/MusicRecording",
+    "name": "Schema.org - MusicRecording"
+  },
+  {
+    "id": "http://schema.org/ChooseAction",
+    "name": "Schema.org - ChooseAction"
+  },
+  {
+    "id": "http://schema.org/Photograph",
+    "name": "Schema.org - Photograph"
+  },
+  {
+    "id": "http://schema.org/PaymentStatusType",
+    "name": "Schema.org - PaymentStatusType"
+  },
+  {
+    "id": "http://schema.org/Map",
+    "name": "Schema.org - Map"
+  },
+  {
+    "id": "http://schema.org/EducationalAudience",
+    "name": "Schema.org - EducationalAudience"
+  },
+  {
+    "id": "http://schema.org/MenuSection",
+    "name": "Schema.org - MenuSection"
+  },
+  {
+    "id": "http://schema.org/Specialty",
+    "name": "Schema.org - Specialty"
+  },
+  {
+    "id": "http://schema.org/GovernmentOffice",
+    "name": "Schema.org - GovernmentOffice"
+  },
+  {
+    "id": "http://schema.org/TradeAction",
+    "name": "Schema.org - TradeAction"
+  },
+  {
+    "id": "http://schema.org/Number",
+    "name": "Schema.org - Number"
+  },
+  {
+    "id": "http://schema.org/Game",
+    "name": "Schema.org - Game"
+  },
+  {
+    "id": "http://schema.org/Course",
+    "name": "Schema.org - Course"
+  },
+  {
+    "id": "http://schema.org/ParentAudience",
+    "name": "Schema.org - ParentAudience"
+  },
+  {
+    "id": "http://schema.org/SoftwareApplication",
+    "name": "Schema.org - SoftwareApplication"
+  },
+  {
+    "id": "http://schema.org/DriveWheelConfigurationValue",
+    "name": "Schema.org - DriveWheelConfigurationValue"
+  },
+  {
+    "id": "http://schema.org/QualitativeValue",
+    "name": "Schema.org - QualitativeValue"
+  },
+  {
+    "id": "http://schema.org/Product",
+    "name": "Schema.org - Product"
+  },
+  {
+    "id": "http://schema.org/Integer",
+    "name": "Schema.org - Integer"
+  },
+  {
+    "id": "http://schema.org/DeliveryMethod",
+    "name": "Schema.org - DeliveryMethod"
+  },
+  {
+    "id": "http://schema.org/DatedMoneySpecification",
+    "name": "Schema.org - DatedMoneySpecification"
+  },
+  {
+    "id": "http://schema.org/MoveAction",
+    "name": "Schema.org - MoveAction"
+  },
+  {
+    "id": "http://schema.org/LeaveAction",
+    "name": "Schema.org - LeaveAction"
+  },
+  {
+    "id": "http://schema.org/Question",
+    "name": "Schema.org - Question"
+  },
+  {
+    "id": "http://schema.org/ReviewAction",
+    "name": "Schema.org - ReviewAction"
+  },
+  {
+    "id": "http://schema.org/TravelAction",
+    "name": "Schema.org - TravelAction"
+  },
+  {
+    "id": "http://schema.org/PlaceOfWorship",
+    "name": "Schema.org - PlaceOfWorship"
+  },
+  {
+    "id": "http://schema.org/CreativeWork",
+    "name": "Schema.org - CreativeWork"
+  },
+  {
+    "id": "http://schema.org/HowToItem",
+    "name": "Schema.org - HowToItem"
+  },
+  {
+    "id": "http://schema.org/CourseInstance",
+    "name": "Schema.org - CourseInstance"
+  },
+  {
+    "id": "http://schema.org/EntryPoint",
+    "name": "Schema.org - EntryPoint"
+  },
+  {
+    "id": "http://schema.org/PublicationEvent",
+    "name": "Schema.org - PublicationEvent"
+  },
+  {
+    "id": "http://schema.org/SellAction",
+    "name": "Schema.org - SellAction"
+  },
+  {
+    "id": "http://schema.org/ItemList",
+    "name": "Schema.org - ItemList"
+  },
+  {
+    "id": "http://schema.org/GiveAction",
+    "name": "Schema.org - GiveAction"
+  },
+  {
+    "id": "http://schema.org/CreativeWorkSeries",
+    "name": "Schema.org - CreativeWorkSeries"
+  },
+  {
+    "id": "http://schema.org/SoftwareSourceCode",
+    "name": "Schema.org - SoftwareSourceCode"
+  },
+  {
+    "id": "http://schema.org/Energy",
+    "name": "Schema.org - Energy"
+  },
+  {
+    "id": "http://schema.org/Seat",
+    "name": "Schema.org - Seat"
+  },
+  {
+    "id": "http://schema.org/EmployeeRole",
+    "name": "Schema.org - EmployeeRole"
+  },
+  {
+    "id": "http://schema.org/HealthAndBeautyBusiness",
+    "name": "Schema.org - HealthAndBeautyBusiness"
+  },
+  {
+    "id": "http://schema.org/GeoCoordinates",
+    "name": "Schema.org - GeoCoordinates"
+  },
+  {
+    "id": "http://schema.org/Book",
+    "name": "Schema.org - Book"
+  },
+  {
+    "id": "http://schema.org/Residence",
+    "name": "Schema.org - Residence"
+  },
+  {
+    "id": "http://schema.org/Movie",
+    "name": "Schema.org - Movie"
+  },
+  {
+    "id": "http://schema.org/ComputerLanguage",
+    "name": "Schema.org - ComputerLanguage"
+  },
+  {
+    "id": "http://schema.org/Duration",
+    "name": "Schema.org - Duration"
+  },
+  {
+    "id": "http://schema.org/OfferCatalog",
+    "name": "Schema.org - OfferCatalog"
+  },
+  {
+    "id": "http://schema.org/DonateAction",
+    "name": "Schema.org - DonateAction"
+  },
+  {
+    "id": "http://schema.org/ContactPoint",
+    "name": "Schema.org - ContactPoint"
+  },
+  {
+    "id": "http://schema.org/DigitalDocumentPermissionType",
+    "name": "Schema.org - DigitalDocumentPermissionType"
+  },
+  {
+    "id": "http://schema.org/WebPageElement",
+    "name": "Schema.org - WebPageElement"
+  },
+  {
+    "id": "http://schema.org/DataDownload",
+    "name": "Schema.org - DataDownload"
+  },
+  {
+    "id": "http://schema.org/Enumeration",
+    "name": "Schema.org - Enumeration"
+  },
+  {
+    "id": "http://schema.org/UserInteraction",
+    "name": "Schema.org - UserInteraction"
+  },
+  {
+    "id": "http://schema.org/Message",
+    "name": "Schema.org - Message"
+  },
+  {
+    "id": "http://schema.org/SportsActivityLocation",
+    "name": "Schema.org - SportsActivityLocation"
+  },
+  {
+    "id": "http://schema.org/BusStop",
+    "name": "Schema.org - BusStop"
+  },
+  {
+    "id": "http://schema.org/InviteAction",
+    "name": "Schema.org - InviteAction"
+  },
+  {
+    "id": "http://schema.org/SportsOrganization",
+    "name": "Schema.org - SportsOrganization"
+  },
+  {
+    "id": "http://schema.org/CivicStructure",
+    "name": "Schema.org - CivicStructure"
+  },
+  {
+    "id": "http://schema.org/Suite",
+    "name": "Schema.org - Suite"
+  },
+  {
+    "id": "http://schema.org/MedicalOrganization",
+    "name": "Schema.org - MedicalOrganization"
+  },
+  {
+    "id": "http://schema.org/LodgingReservation",
+    "name": "Schema.org - LodgingReservation"
+  },
+  {
+    "id": "http://schema.org/UseAction",
+    "name": "Schema.org - UseAction"
+  },
+  {
+    "id": "http://schema.org/RsvpResponseType",
+    "name": "Schema.org - RsvpResponseType"
+  },
+  {
+    "id": "http://schema.org/TrainStation",
+    "name": "Schema.org - TrainStation"
+  },
+  {
+    "id": "http://schema.org/Mass",
+    "name": "Schema.org - Mass"
+  },
+  {
+    "id": "http://schema.org/OpeningHoursSpecification",
+    "name": "Schema.org - OpeningHoursSpecification"
+  },
+  {
+    "id": "http://schema.org/ReservationStatusType",
+    "name": "Schema.org - ReservationStatusType"
+  },
+  {
+    "id": "http://schema.org/Blog",
+    "name": "Schema.org - Blog"
+  },
+  {
+    "id": "http://schema.org/ProgramMembership",
+    "name": "Schema.org - ProgramMembership"
+  },
+  {
+    "id": "http://schema.org/MapCategoryType",
+    "name": "Schema.org - MapCategoryType"
+  },
+  {
+    "id": "http://schema.org/JoinAction",
+    "name": "Schema.org - JoinAction"
+  },
+  {
+    "id": "http://schema.org/Corporation",
+    "name": "Schema.org - Corporation"
+  },
+  {
+    "id": "http://schema.org/Quantity",
+    "name": "Schema.org - Quantity"
+  },
+  {
+    "id": "http://schema.org/Distance",
+    "name": "Schema.org - Distance"
+  },
+  {
+    "id": "http://schema.org/StructuredValue",
+    "name": "Schema.org - StructuredValue"
+  },
+  {
+    "id": "http://schema.org/Thing",
+    "name": "Schema.org - Thing"
+  },
+  {
+    "id": "http://schema.org/FollowAction",
+    "name": "Schema.org - FollowAction"
+  },
+  {
+    "id": "http://schema.org/InsertAction",
+    "name": "Schema.org - InsertAction"
+  },
+  {
+    "id": "http://schema.org/DeliveryEvent",
+    "name": "Schema.org - DeliveryEvent"
+  },
+  {
+    "id": "http://schema.org/OfferItemCondition",
+    "name": "Schema.org - OfferItemCondition"
+  },
+  {
+    "id": "http://schema.org/Event",
+    "name": "Schema.org - Event"
+  },
+  {
+    "id": "http://schema.org/RealEstateAgent",
+    "name": "Schema.org - RealEstateAgent"
+  },
+  {
+    "id": "http://schema.org/Place",
+    "name": "Schema.org - Place"
+  },
+  {
+    "id": "http://schema.org/ItemAvailability",
+    "name": "Schema.org - ItemAvailability"
+  },
+  {
+    "id": "http://schema.org/Comment",
+    "name": "Schema.org - Comment"
+  },
+  {
+    "id": "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "name": "RDF Schema - Resource"
+  },
+  {
+    "id": "http://www.w3.org/2000/01/rdf-schema#Class",
+    "name": "RDF Schema - Class"
+  },
+  {
+    "id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "name": "RDF Schema - Literal"
+  },
+  {
+    "id": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+    "name": "RDF Schema - Datatype"
+  },
+  {
+    "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+    "name": "RDF - langString"
+  },
+  {
+    "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML",
+    "name": "RDF - HTML"
+  },
+  {
+    "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+    "name": "RDF - XMLLiteral"
+  },
+  {
+    "id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "name": "RDF - Property"
+  }
+]

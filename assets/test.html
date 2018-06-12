@@ -1,0 +1,457 @@
+<html>
+<head>
+<script src="jquery.min.js"></script>
+
+<script src="jquery.jexcel.js"></script>
+<script src="cytoscape.min.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+
+<link rel="stylesheet" href="jquery.jexcel.min.css" type="text/css" />
+
+<style>
+    
+    #triples{
+        padding: 10px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin: 20px 0 20px 0;
+    }
+    #cy{
+        height: 500px;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+
+
+    #cyAll{
+
+        height: 1000px;
+        width: 100%;
+        background-color: whitesmoke;
+
+    }
+    #content{
+        display: none;
+    }
+    #login{
+        width: 500px;
+        margin: auto;
+
+    }
+    #login-form{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+</style>
+</head>
+
+<div id="login">
+                        <div id="login-form">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Username">                                        
+                             <button id="login-button" class="btn btn-primary">Start</button>
+                        </div>
+
+                       
+                        </div>
+
+</div>
+<div id="content">
+    <h5>Add Triples:</h5>
+    <div id="my"></div>
+    <button id="button-add-row">Add Row</button>
+
+
+    <div>Docs: <a href="https://www.w3.org/TR/rdf-schema/" target="_blank">RDF/s</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">FOAF</a>, <a href="https://www.w3.org/2009/08/skos-reference/skos.html" target="_blank">SKOS</a>, <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">Bibframe</a>, <a href="http://purl.org/vocab/relationship/" target="_blank">Relationships</a></div>
+    <code><pre><div id="triples"></div></pre></code>
+    <div id="cy"></div>
+    <hr>
+    <h3>All Triples</h3>
+    <button id="cy-all">Refresh</button>
+    <div id="cyAll"></div>
+</div>
+
+
+<script>
+
+    var saveData = function(){
+
+        var data = $('#my').jexcel('getData', false);
+        var errors = "";
+        var triples = "";
+        var postData = []
+
+        for (var d in data){
+            var s = data[d][0];
+            var p = data[d][1];
+            var o = data[d][2];
+            triple = "";
+
+            if (s.trim().length === 0 || p.trim().length === 0 || o.trim().length === 0){
+                continue
+            }
+
+            triple = '&lt;' + s + '&gt; ' + '&lt;' + p + '&gt; '
+
+            if (o.search('http://') === -1 && o.search('https://') === -1){
+                // it is a literal
+                o = o.replace(/"/g,"'");
+                o = '"' + o + '"';
+                triple = triple + ' ' + o + ' .';
+            }else{
+                triple = triple + '&lt;' + o + '&gt; . ';
+            }
+            console.log(s,p,o);
+            triples = triples + triple + '<br>';
+            postData.push({s:s,p:p,o:o})
+
+
+        }
+        triples = '<h5>Your Triples:</h5>' + triples
+        $("#triples").html(triples);
+
+        doCy()
+
+        $.ajax({
+            url:"/savedata?name=" + window.username,
+            method:"POST", //First change type to method here
+
+            data:JSON.stringify(postData),
+            contentType:"application/json; charset=utf-8",
+            success:function(response) {
+             console.log(response)
+           },
+           error:function(){
+            alert("error");
+           }
+
+          });
+
+    }
+
+
+
+    var dataChanged = function(){
+        console.log('changed')
+        saveData()
+    }
+
+
+
+    var doCy = function(){
+
+        $.getJSON( "/cytodata", { name: window.username} )
+          .done(function( json ) {
+            console.log( "JSON Data: >>>>>>>" ,json );
+
+            var cy = window.cy = cytoscape({
+                  container: document.getElementById('cy'),
+
+                  boxSelectionEnabled: false,
+                  autounselectify: true,
+
+                    layout: {
+                    name: 'cose',
+                    idealEdgeLength: 100,
+                    nodeOverlap: 20,
+                    refresh: 20,
+                    fit: true,
+                    padding: 30,
+                    randomize: false,
+                    componentSpacing: 100,
+                    nodeRepulsion: 10000,
+                    edgeElasticity: 100,
+                    nestingFactor: 5,
+                    gravity: 80,
+                    numIter: 1000,
+                    initialTemp: 200,
+                    coolingFactor: 0.95,
+                    minTemp: 1.0
+                  }
+                  ,
+
+                  style: style,
+
+                  elements:json
+                });
+
+            
+            window.setTimeout(function(){
+
+                window.cy.resize()
+                console.log(cy)
+
+            },1000)
+
+          })
+          .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+
+
+    }
+
+
+    var doCyAll = function(){
+
+        $.getJSON( "/cytodata", { name: 'returnall'} )
+          .done(function( json ) {
+
+            var cy = window.cy = cytoscape({
+                  container: document.getElementById('cyAll'),
+
+                  boxSelectionEnabled: false,
+                  autounselectify: true,
+
+                    layout: {
+                    name: 'cose',
+                    idealEdgeLength: 100,
+                    nodeOverlap: 20,
+                    refresh: 20,
+                    fit: true,
+                    padding: 30,
+                    randomize: false,
+                    componentSpacing: 100,
+                    nodeRepulsion: 10000,
+                    edgeElasticity: 100,
+                    nestingFactor: 5,
+                    gravity: 80,
+                    numIter: 1000,
+                    initialTemp: 200,
+                    coolingFactor: 0.95,
+                    minTemp: 1.0
+                  }
+                  ,
+
+                  style: style,
+
+                  elements:json
+                });
+
+            
+            window.setTimeout(function(){
+
+                window.cy.resize()
+                console.log(cy)
+
+            },1000)
+
+          })
+          .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+
+
+    }
+
+    $("#button-add-row").click(function(event){
+        $('#my').jexcel('insertRow', 1);
+    })
+    $("#cy-all").click(function(event){
+       doCyAll()
+    })
+
+
+
+    $('#login-button').click(function(event){
+       window.username = $("#email").val()
+       if ( window.username && window.username.length > 0){
+           $('#login').toggle()
+           $('#content').toggle()        
+
+
+            $.getJSON( "/getdata", { name: window.username } )
+              .done(function( data ) {
+
+
+                $('#my').jexcel({
+                    data:data,
+                    colHeaders: ['Subject', 'Predicate', 'Object'],
+                    colWidths: [ 400, 400, 400 ],
+                    onafterchange: dataChanged,
+                    allowInsertColumn: false,
+                    allowManualInsertColumn: false,
+                    allowDeleteColumn: false,
+                    columns: [
+                        { type: 'autocomplete', url:'classes.json' },
+                        { type: 'autocomplete', url:'properties.json' },
+                        { type: 'autocomplete', url:'classes.json' },
+                    ]
+                });
+
+                doCy()
+
+
+              })
+              .fail(function( jqxhr, textStatus, error ) {
+                var err = textStatus + ", " + error;
+                console.log( "Request Failed: " + err );
+            });
+
+
+
+
+
+
+
+
+
+
+       }else{
+        alert('bad username')
+       }
+
+    })
+
+
+
+
+
+
+    var style = [
+          {
+            "selector": "node",
+            "style": {
+              "height": 40,
+              "width": 40,
+              "background-color": "#ccc",
+              "label": "data(label)"
+            }
+          },
+
+          {
+            "selector": "edge",
+            "style": {
+              "label": "data(label)",
+              "width": 3,
+              "line-color": "#ccc",
+            'target-arrow-shape': 'triangle',
+            'target-arrow-color': '#9dbaea',
+
+            }
+          },
+
+          {
+            "selector": ".top-left",
+            "style": {
+              "text-valign": "top",
+              "text-halign": "left"
+            }
+          },
+
+          {
+            "selector": ".top-center",
+            "style": {
+              "text-valign": "top",
+              "text-halign": "center"
+            }
+          },
+
+          {
+            "selector": ".top-right",
+            "style": {
+              "text-valign": "top",
+              "text-halign": "right"
+            }
+          },
+
+          {
+            "selector": ".center-left",
+            "style": {
+              "text-valign": "center",
+              "text-halign": "left"
+            }
+          },
+
+          {
+            "selector": ".center-center",
+            "style": {
+              "text-valign": "center",
+              "text-halign": "center"
+            }
+          },
+
+          {
+            "selector": ".center-right",
+            "style": {
+              "text-valign": "center",
+              "text-halign": "right"
+            }
+          },
+
+          {
+            "selector": ".bottom-left",
+            "style": {
+              "text-valign": "bottom",
+              "text-halign": "left"
+            }
+          },
+
+          {
+            "selector": ".bottom-center",
+            "style": {
+              "text-valign": "bottom",
+              "text-halign": "center"
+            }
+          },
+
+          {
+            "selector": ".bottom-right",
+            "style": {
+              "text-valign": "bottom",
+              "text-halign": "right"
+            }
+          },
+
+          {
+            "selector": ".multiline-manual",
+            "style": {
+              "text-wrap": "wrap"
+            }
+          },
+
+          {
+            "selector": ".multiline-auto",
+            "style": {
+              "text-wrap": "wrap",
+              "text-max-width": 80
+            }
+          },
+
+          {
+            "selector": ".autorotate",
+            "style": {
+              "edge-text-rotation": "autorotate"
+            }
+          },
+
+          {
+            "selector": ".background",
+            "style": {
+              "text-background-opacity": 1,
+              "text-background-color": "#ccc",
+              "text-background-shape": "roundrectangle",
+              "text-border-color": "#000",
+              "text-border-width": 1,
+              "text-border-opacity": 1
+            }
+          },
+
+          {
+            "selector": ".outline",
+            "style": {
+              "text-outline-color": "#ccc",
+              "text-outline-width": 3
+            }
+          }
+        ]
+
+
+
+</script>
+</html>
