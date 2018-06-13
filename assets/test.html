@@ -4,9 +4,12 @@
 
 <script src="jquery.jexcel.js"></script>
 <script src="cytoscape.min.js"></script>
+<script src="jquery.qtip.js"></script>
+<script src="cytoscape-qtip.js"></script>
+
 
 <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
-
+<link rel="stylesheet" href="jquery.qtip.css" type="text/css" />
 <link rel="stylesheet" href="jquery.jexcel.min.css" type="text/css" />
 
 <style>
@@ -164,6 +167,8 @@
 
                   boxSelectionEnabled: false,
                   autounselectify: true,
+                maxZoom: 2,
+                minZoom: 0.5,
 
                     layout: {
                     name: 'cose',
@@ -198,6 +203,47 @@
 
             },1000)
 
+            var propsLookup = {}
+            for (var x in json.nodes){
+                propsLookup[json.nodes[x].data.id] = json.nodes[x].data.props
+            }
+
+
+            // cy.on('click', 'node', function(evt){
+            //       console.log(   );
+            // });
+            cy.elements().qtip({
+                content: function(){ return propsLookup[this.id()] },
+                position: {
+                    my: 'top center',
+                    at: 'bottom center'
+                },
+                style: {
+                    classes: 'qtip-bootstrap',
+                    tip: {
+                        width: 16,
+                        height: 8
+                    }
+                }
+            });
+
+            // cy.$('#n').qtip({
+            //   content: 'Hello!',
+            //   position: {
+            //     my: 'top center',
+            //     at: 'bottom center'
+            //   },
+            //   style: {
+            //     classes: 'qtip-bootstrap',
+            //     tip: {
+            //       width: 16,
+            //       height: 8
+            //     }
+            //   }
+            // });
+
+
+
           })
           .fail(function( jqxhr, textStatus, error ) {
             var err = textStatus + ", " + error;
@@ -213,11 +259,13 @@
         $.getJSON( "/cytodata", { name: 'returnall', room: window.roomname} )
           .done(function( json ) {
 
-            var cy = window.cy = cytoscape({
+            var cyAll = window.cyAll = cytoscape({
                   container: document.getElementById('cyAll'),
 
                   boxSelectionEnabled: false,
                   autounselectify: true,
+                  maxZoom: 2,
+                  minZoom: 0.5,
 
                     layout: {
                     name: 'cose',
@@ -247,11 +295,34 @@
             
             window.setTimeout(function(){
 
-                window.cy.resize()
+                window.cyAll.resize()
                 
 
 
             },1000)
+
+
+
+            var propsLookup = {}
+            for (var x in json.nodes){
+                propsLookup[json.nodes[x].data.id] = json.nodes[x].data.props
+            }
+
+            cyAll.elements().qtip({
+                content: function(){ return propsLookup[this.id()] },
+                position: {
+                    my: 'top center',
+                    at: 'bottom center'
+                },
+                style: {
+                    classes: 'qtip-bootstrap',
+                    tip: {
+                        width: 16,
+                        height: 8
+                    }
+                }
+            });
+
 
           })
           .fail(function( jqxhr, textStatus, error ) {
@@ -297,6 +368,14 @@
             }
             triples = '<h5>All NT Triples:</h5>' + triples
             $("#triples-all").html(triples);
+
+
+
+
+
+            // cy.on('click', 'node', function(evt){
+            //       console.log(   );
+            // });
 
 
 

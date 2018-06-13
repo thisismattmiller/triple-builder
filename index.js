@@ -180,7 +180,7 @@ app.get('/cytodata', function(req, res) {
 
 	Object.keys(entities).forEach((e)=>{
 
-		cytoData.nodes.push({data:{ id: e, label:entities[e].label}, classes: 'bottom-center' })
+		cytoData.nodes.push({data:{ id: e, label:entities[e].label, props: entities[e].props.map((p)=>{return p[0] + ': ' + p[1]}).join("<br>")}, classes: 'bottom-center' })
 
 		entities[e].triples.forEach((t)=>{
 
