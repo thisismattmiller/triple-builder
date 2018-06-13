@@ -1,1 +1,1586 @@
-{}
+{
+  "rawData": {
+    "all": [
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Matt Miller\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q1204714"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q1204714",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Pratt\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q999"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q999",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Cristina Pattuelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/entity/Q37320"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q37320",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Cleveland Ohio, US\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3",
+        "p": "https://www.wikidata.org/wiki/Property:P1449",
+        "o": "\"Matt\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3",
+        "p": "https://www.wikidata.org/wiki/Property:P551",
+        "o": "https://www.wikidata.org/entity/Q60"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Maura Quaquarelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"maura.quaquarelli2@unibo.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://xmlns.com/foaf/0.1/nick",
+        "o": "\"HerMauren\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q17"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://schema.org/birthPlace",
+        "o": "http://www.geonames.org/maps/google_44.64_11.184.html"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q131262"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q10"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://schema.org/workLocation",
+        "o": "http://www.geonames.org/maps/google_44.494_11.339.html"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q14"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "http://purl.org/bncf/tid/322"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/entity/Q1223109"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entityQ10",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Alessandra Citti\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q1223109",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Luca Argentero\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://purl.org/vocab/relationship/livesWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q33"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q33",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Michele Draghetti\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://ravenna2018.semlab.io/Property:P2",
+        "o": "http://id.loc.gov/authorities/subjects/sh85076491"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Elena Petroselli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"elena.petroselli@gmail.com\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q467025"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q22"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "\"03/05/1988\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q220"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "https://www.unigre.it/pug/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "http://purl.org/bncf/tid/26623"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "\"female\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q14",
+        "p": "http://ravenna2018.semlab/Property:P2",
+        "o": "https://www.wikidata.org/wiki/Q182436"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Viviana Mandrile\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"viviana.mandrile@unito.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "\"female\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "https://www.unito.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q495"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "http://purl.org/bncf/tid/2147"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q4",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Spyros Koulouris\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q4",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3558578",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Villa I Tatti\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3558578",
+        "p": "http://schema.org/workLocation",
+        "o": "http://ravenna2018.semlab.io/entity/Q4"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13371",
+        "p": "http://schema.org/owns",
+        "o": "https://www.wikidata.org/entity/Q3558578"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13371",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Harvard University\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q4",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/entity/Q41"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q41",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Greece\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q41",
+        "p": "http://schema.org/isPartOf",
+        "o": "https://www.wikidata.org/entity/Q46"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q46",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Europe\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q38",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Italy\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q38",
+        "p": "http://schema.org/isPartOf",
+        "o": "https://www.wikidata.org/entity/Q46"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3558578",
+        "p": "http://schema.org/location",
+        "o": "https://www.wikidata.org/entity/Q38"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q359047",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Bernard Berenson\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q359047",
+        "p": "http://schema.org/creator",
+        "o": "https://www.wikidata.org/entity/Q3558578"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q359047",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q359047",
+        "p": "http://schema.org/relatedTo",
+        "o": "https://www.wikidata.org/entity/Q13371"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q182436",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Librarian\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q4",
+        "p": "http://schema.org/jobTitle",
+        "o": "https://www.wikidata.org/entity/Q182436"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Ilaria della Monica\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://purl.org/vocab/relationship/colleagueOf",
+        "o": "http://ravenna2018.semlab.io/entity/Q4"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Mara Persello\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q913987"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "https://www.wikidata.org/wiki/Property:P551",
+        "o": "https://www.wikidata.org/entity/Q2790"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q2790",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Udine\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q913987",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"HAW Hamburg\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://schema.org/birthDate",
+        "o": "\"31/12/1974\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "https://www.wikidata.org/wiki/Q21818619",
+        "o": "http://ravenna2018.semlab.io/entity/Q29"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "https://www.wikidata.org/wiki/Q21818619",
+        "o": "http://ravenna2018.semlab.io/entity/Q30"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q4024265"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q4024265",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Zerocalcare\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Marta Erica Arosio\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://www.w3.org/2004/02/skos/core#altLabel",
+        "o": "\"Marta Arosio\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q24"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581072"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q15136611",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Wikimedia Italia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q15136611"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q490"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "\"08-08\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Francesca Ussani\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "https://www.wikimedia.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Matt Miller\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q190379"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/influencedBy",
+        "o": "https://www.wikidata.org/wiki/Q49760"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q999"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q4024265"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q999",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Cristina Pattuelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q999"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q999",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://xmlns.com/foaf/0.1/firstName",
+        "o": "\"Marta\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://xmlns.com/foaf/0.1/lastName",
+        "o": "\"Arosio\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Fausto Fiasconaro\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Pasquale Spinelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q3747226"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581097"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/age",
+        "o": "\"31\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q21"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q15"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "https://www.wikidata.org/wiki/Q2429"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q81333"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://schema.org/skills",
+        "o": "https://www.wikidata.org/wiki/Q11420"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://schema.org/skills",
+        "o": "https://www.wikidata.org/wiki/Q7190132"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://schema.org/jobLocation",
+        "o": "https://www.wikidata.org/wiki/Q641"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q81333",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Polla\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q641",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Venezia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/wiki/Q638"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q638",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Musica\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q12",
+        "p": "http://xmlns.com/foaf/0.1/topic_interest",
+        "o": "https://www.wikidata.org/wiki/Q213728"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q213728",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Variazioni Goldberg\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q1339",
+        "p": "http://schema.org/author",
+        "o": "https://www.wikidata.org/wiki/Q213728"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Carlo Bianchini\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"carlo.bianchini@unipv.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://xmlns.com/foaf/0.1/based_near",
+        "o": "https://www.wikidata.org/wiki/Q6231"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q219317"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q219317",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Università di Pavia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://schema.org/sameAs",
+        "o": "https://www.wikidata.org/wiki/Q54553295"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581097"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q6581097",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Maschio\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q6231",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Cremona\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://schema.org/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q21"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://schema.org/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q12"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q219317",
+        "p": "http://xmlns.com/foaf/0.1/based_near",
+        "o": "http://www.geonames.org/maps/google_45.192_9.159.html"
+      },
+      {
+        "s": "http://www.geonames.org/maps/google_45.192_9.159.html",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Pavia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Francesca Ussani\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q16"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581072"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q15136611"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q13367"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "\"12-10\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/firstName",
+        "o": "\"Francesca\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q6581072",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"female\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q15136611",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Wikimedia Italia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q16",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Marta Erica Arosio\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q13367",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Forlì\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://schema.org/homeLocation",
+        "o": "https://www.wikidata.org/wiki/Q490"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q490",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Milano\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/nick",
+        "o": "\"Frussi\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/lastName",
+        "o": "\"Ussani\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q3",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Matt Miller\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q999"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q999",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Cristina Pattuelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/age",
+        "o": "https://www.wikidata.org/wiki/Q712661"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"francesca.ussani@wikimedia.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q4024265"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q4024265",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Zerocalcare\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q188668"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q188668",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Thom Yorke\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://id.loc.gov/ontologies/bibframe/findingAidOf",
+        "o": "https://www.wikidata.org/wiki/Q123414"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q123414",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"stress\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/enemyOf",
+        "o": "https://www.wikidata.org/wiki/Q1055449"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q1055449",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Matteo Salvini\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q712661",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"33\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q24",
+        "p": "http://purl.org/vocab/relationship/hasMet",
+        "o": "http://ravenna2018.semlab.io/entity/Q15"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q15",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Carlo Bianchini\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Valentina Urbinati\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q13369"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13369",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Comune di Rimini\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "http://schema.org/birthDate",
+        "o": "\"17/02/1983\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "https://www.wikidata.org/wiki/Property:P26",
+        "o": "\"Gianluca\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "https://www.wikidata.org/wiki/Q47728",
+        "o": "https://www.wikidata.org/wiki/Q638"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "https://www.wikidata.org/wiki/Q21818619",
+        "o": "http://ravenna2018.semlab.io/entity/Q8"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q8",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Mara\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q29",
+        "p": "https://www.wikidata.org/wiki/Q21818619",
+        "o": "http://ravenna2018.semlab.io/entity/Q30"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q30",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Franco\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Fabio Naccari\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"fabio.naccari@fondazionelevi.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q3747226"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581097"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q12"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "https://www.wikidata.org/wiki/Q2613"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/wiki/Q223705"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q21",
+        "p": "http://schema.org/jobLocation",
+        "o": "https://www.wikidata.org/wiki/Q641"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q3747226",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Fondazione Ugo e Olga Levi\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q641",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Venezia\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q2613",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"15 June\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"''Ilaria Della Monica''\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://schema.org/identifier",
+        "o": "http://id.loc.gov/authorities/names/nr94041903.html"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://schema.org/workLocation",
+        "o": "https://www.wikidata.org/entity/Q3558578"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://xmlns.com/foaf/0.1/familyName",
+        "o": "\"'Della Monica'\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://schema.org/spouse",
+        "o": "http://id.loc.gov/authorities/names/no2002115937.html"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3558578",
+        "p": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "o": "https://www.wikidata.org/entity/Q13371"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q3558578",
+        "p": "RDF Schema - label",
+        "o": "\"Villa I Tatti\""
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13371",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Harvard University\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q19",
+        "p": "http://schema.org/jobTitle",
+        "o": "https://www.wikidata.org/entity/Q635734"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q6",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Carla Colombati\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q6",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q6",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q2303527"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q6",
+        "p": "http://purl.org/vocab/relationship/collaboratesWith",
+        "o": "\"Wikimedia Italia\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q6",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q2303527"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q2303527",
+        "p": "http://purl.org/vocab/relationship/collaboratesWith",
+        "o": "https://it.wikipedia.org/wiki/Musei_dell%27Abruzzo#Giulianova"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Alessandra Citti\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q131262"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"alessandra.citti@unibo.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"''''Elena Fuschini''''\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q131262"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q131262",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"''''Università di Bologna''''\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/entity/Q13364"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13364",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"''''Ravenna''''\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q9"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"'''Maura Quaquarelli'''\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q9",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q131262"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://schema.org/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q20"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Emanuela Secinaro\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q25",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "http://ravenna2018.semlab.io/entity/Q10"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Alessandra Citti\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q131262"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Franco Facondini\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"facondini.f@libero.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/entity/Q16268"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q16268",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Provincia di Rimini\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "https://www.wikidata.org/wiki/Property/P21",
+        "o": "https://www.wikidata.org/entity/Q6581097"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q6581097",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Male\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "https://www.wikidata.org/wiki/Property:P31",
+        "o": "https://www.wikidata.org/wiki/Q5"
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q5",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Human\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://purl.org/vocab/relationship/friendOf",
+        "o": "http://ravenna2018.semlab.io/entity/Q29"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/Entity/Q30",
+        "p": "http://purl.org/vocab/relationship/friendOf",
+        "o": "http://ravenna2018.semlab.io/entity/Q8"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Roberto Sasso\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"roberto.sasso73@gmail.com\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://xmlns.com/foaf/0.1/publications",
+        "o": "http://id.sbn.it/bid/CAM0024534"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q18"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://purl.org/vocab/relationship/descendantOf",
+        "o": "https://www.wikidata.org/wiki/Q290720"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q13",
+        "p": "http://xmlns.com/foaf/0.1/schoolHomepage",
+        "o": "https://www.wikidata.org/wiki/Q209344"
+      },
+      {
+        "s": "http://id.sbn.it/bid/CAM0024534",
+        "p": "http://id.loc.gov/ontologies/bibframe/place",
+        "o": "https://www.wikidata.org/wiki/Q58898"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Emanuela Secinaro\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"e.secinaro@inrim.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q3803774"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "https://www.inrim.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/birthday",
+        "o": "\"05/01/1973\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://schema.org/workPerformed",
+        "o": "https://www.wikidata.org/wiki/Q7075"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/topic_interest",
+        "o": "https://www.wikidata.org/wiki/Q515701"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://schema.org/worksFor",
+        "o": "https://dati.cobis.to.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q9573"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/currentProject",
+        "o": "https://dati.cobis.to.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/wiki/Q61509"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q20",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581072"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q17",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Antonella Brunelli\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q17",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"antonella.brunelli@unibo.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q17",
+        "p": "http://xmlns.com/foaf/0.1/currentProject",
+        "o": "\"Philomed\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q17",
+        "p": "http://purl.org/vocab/relationship/collaboratesWith",
+        "o": "\"Alessandra Citti\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Fausto Fiasconaro\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q3639574"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/wiki/Q1149018"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q7226"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"ffiasconaro@classense.ra.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://purl.org/vocab/relationship/colleagueOf",
+        "o": "http://ravenna2018.semlab.io/entity/Q31"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://xmlns.com/foaf/0.1/knows",
+        "o": "http://ravenna2018.semlab.io/entity/Q13"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://purl.org/vocab/relationship/enemyOf",
+        "o": "http://ravenna2018.semlab.io/entity/Q13"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://schema.org/birthDate",
+        "o": "https://www.wikidata.org/wiki/Q2390"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://schema.org/birthDate",
+        "o": "https://www.wikidata.org/wiki/Q2436"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/wiki/Q6581097"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://purl.org/vocab/relationship/apprenticeTo",
+        "o": "http://ravenna2018.semlab.io/entity/Q3"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q18",
+        "p": "http://schema.org/author",
+        "o": "http://id.sbn.it/bid/RAV2039079"
+      },
+      {
+        "s": "http://viaf.org/viaf/3700898",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Domenico Guerrini\""
+      },
+      {
+        "s": "http://id.sbn.it/bid/RAV2039079",
+        "p": "topic",
+        "o": "http://id.sbn.it/bid/RAV2039079"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q26",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Francesca Fano\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q26",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q26",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/entity/Q1891"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q1891",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Bologna\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q26",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "https://www.wikidata.org/entity/Q6581072"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q6581072",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Female\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q26",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/entity/Q13364"
+      },
+      {
+        "s": "https://www.wikidata.org/entity/Q13364",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Ravenna\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Viviana Mandrile\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "o": "http://xmlns.com/foaf/0.1/Person"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"viviana.mandrile@unito.it\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/gender",
+        "o": "\"female\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q495"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://schema.org/birthDate",
+        "o": "\"1961\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "https://www.unito.it/"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "http://purl.org/bncf/tid/2147"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "https://www.wikidata.org/wiki/Q23844"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q22",
+        "p": "http://purl.org/vocab/relationship/colleagueOf",
+        "o": "\"Eanuela Secinaro\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"'Alessandra Citti'\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://purl.org/vocab/relationship/worksWith",
+        "o": "\"'Mario Rossi'\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/mbox",
+        "o": "\"'alessandra.citti@unibo.it'\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/worksFor",
+        "o": "https://www.wikidata.org/wiki/Q131262"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/interest",
+        "o": "https://www.wikidata.org/wiki/Q199655"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/birthPlace",
+        "o": "https://www.wikidata.org/wiki/Q1891"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/nick",
+        "o": "\"Ale\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/firstName",
+        "o": "\"Alessandra\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q131262",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"University of Bologna\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q199655",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"BIBLIOTECONOMIA - LIBRARY SCIENCE\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q1891",
+        "p": "http://www.w3.org/2000/01/rdf-schema#label",
+        "o": "\"Bologna - Italy\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://xmlns.com/foaf/0.1/workplaceHomepage",
+        "o": "http://www.unibo.it"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://purl.org/vocab/relationship/friendOf",
+        "o": "\"Tiziana\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/birthDate",
+        "o": "\"08-06\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://purl.org/vocab/relationship/wouldLikeToKnow",
+        "o": "\"Mario Gialli\""
+      },
+      {
+        "s": "https://www.wikidata.org/wiki/Q131262",
+        "p": "http://xmlns.com/foaf/0.1/homepage",
+        "o": "http://www.unibo.it"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/jobTitle",
+        "o": "\"librarian\""
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q10",
+        "p": "http://schema.org/addressRegion",
+        "o": "https://www.wikidata.org/wiki/Q1263"
+      },
+      {
+        "s": "http://ravenna2018.semlab.io/entity/Q27",
+        "p": "http://purl.org/vocab/relationship/collaboratesWith",
+        "o": "http://xmlns.com/foaf/0.1/Organization"
+      }
+    ]
+  }
+}

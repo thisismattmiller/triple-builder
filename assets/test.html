@@ -42,30 +42,41 @@
     #login-form{
         text-align: center;
         margin-top: 50px;
+        /*display: none*/
+    }
+    #menu{
+        padding: 10px 0 0 10px;
     }
 
 </style>
 </head>
 
 <div id="login">
-                        <div id="login-form">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Username">                                        
-                             <button id="login-button" class="btn btn-primary">Start</button>
-                        </div>
+    <div id="login-form">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Username">
+        <input id="room" type="room" class="form-control" name="room" value="" placeholder="Room Name">                                        
+         <button id="login-button" class="btn btn-primary">Start</button>
+    </div>
 
-                       
-                        </div>
+
+    </div>
 
 </div>
 <div id="content">
+<!--     <div id="menu">
+        <button type="button" class="btn btn-primary">Your Triples</button>
+        <button type="button" class="btn btn-success">All Triples</button>
+    </div>
+
+    <hr> -->
     <h5>Add Triples:</h5>
     <div id="my"></div>
     <button id="button-add-row">Add Row</button>
 
 
-    <div>Docs: <a href="https://www.w3.org/TR/rdf-schema/" target="_blank">RDF/s</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">FOAF</a>, <a href="https://www.w3.org/2009/08/skos-reference/skos.html" target="_blank">SKOS</a>, <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">Bibframe</a>, <a href="http://purl.org/vocab/relationship/" target="_blank">Relationships</a></div>
+    <div>Docs: <a href="https://www.w3.org/TR/rdf-schema/" target="_blank">RDF/s</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">FOAF</a>, <a href="https://www.w3.org/2009/08/skos-reference/skos.html" target="_blank">SKOS</a>, <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">Bibframe</a>, <a href="http://purl.org/vocab/relationship/" target="_blank">Relationships</a>, <a href="http://dublincore.org/documents/dcmi-terms/" target="_blank">Dublin Core Terms</a></div>
     <code><pre><div id="triples"></div></pre></code>
     <div id="cy"></div>
     <hr>
@@ -117,7 +128,7 @@
         doCy()
 
         $.ajax({
-            url:"/savedata?name=" + window.username,
+            url:"/savedata?name=" + window.username + '&room='+ window.roomname,
             method:"POST", //First change type to method here
 
             data:JSON.stringify(postData),
@@ -144,7 +155,7 @@
 
     var doCy = function(){
 
-        $.getJSON( "/cytodata", { name: window.username} )
+        $.getJSON( "/cytodata", { name: window.username, room: window.roomname} )
           .done(function( json ) {
 
 
@@ -199,7 +210,7 @@
 
     var doCyAll = function(){
 
-        $.getJSON( "/cytodata", { name: 'returnall'} )
+        $.getJSON( "/cytodata", { name: 'returnall', room: window.roomname} )
           .done(function( json ) {
 
             var cy = window.cy = cytoscape({
@@ -210,19 +221,19 @@
 
                     layout: {
                     name: 'cose',
-                    idealEdgeLength: 100,
+                    idealEdgeLength: 350,
                     nodeOverlap: 20,
                     refresh: 20,
                     fit: true,
                     padding: 30,
                     randomize: false,
                     componentSpacing: 100,
-                    nodeRepulsion: 10000,
-                    edgeElasticity: 100,
+                    nodeRepulsion: 550000,
+                    edgeElasticity: 350,
                     nestingFactor: 5,
                     gravity: 80,
-                    numIter: 1000,
-                    initialTemp: 200,
+                    numIter: 3000,
+                    initialTemp: 1500,
                     coolingFactor: 0.95,
                     minTemp: 1.0
                   }
@@ -250,7 +261,7 @@
 
 
 
-        $.getJSON( "/getalltriples", { name: 'returnall'} )
+        $.getJSON( "/getalltriples", { name: 'returnall', room: window.roomname} )
           .done(function( data ) {
 
 
@@ -316,19 +327,25 @@
     })
 
    $('#email').on('keypress', function (e) {
-         if(e.which === 13){
+         if(e && e.which === 13){
             login();
          }
    });
 
+   $('#room').on('keypress', function (e) {
+         if(e && e.which === 13){
+            login();
+         }
+   });
     var login = function(){
        window.username = $("#email").val()
-       if ( window.username && window.username.length > 0){
+       window.roomname = $("#room").val()
+       if ( window.username && window.username.length > 0 && window.roomname && window.roomname.length > 0){
            $('#login').toggle()
            $('#content').toggle()        
 
 
-            $.getJSON( "/getdata", { name: window.username } )
+            $.getJSON( "/getdata", { name: window.username, room: window.roomname } )
               .done(function( data ) {
 
 

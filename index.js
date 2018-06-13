@@ -7,7 +7,9 @@ app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
 
 
-const room = 'ravenna2018'
+var rooms = {}
+
+// const room = 'ravenna2018'
 
 prefixes = {
 	'http://xmlns.com/foaf/0.1/' : 'foaf',
@@ -18,22 +20,36 @@ prefixes = {
 	'http://www.w3.org/2000/01/rdf-schema#' : 'rdfs',
 	'http://www.w3.org/1999/02/22-rdf-syntax-ns#' : 'rdf',
 	'https://www.wikidata.org/entity/': 'wd',
+	'http://purl.org/dc/terms/' : 'dcterms',
 	'http://ravenna2018.semlab.io/entity/' : 'ravenna'
 }
 
 
 
-var rawData = JSON.parse(fs.readFileSync(`data/${room}.json`, 'utf8'));
+// var rawData = JSON.parse(fs.readFileSync(`data/${room}.json`, 'utf8'));
 // console.log(rawData)
 
-setTimeout(()=>{
 
-	fs.writeFile(`data/${room}.json`, JSON.stringify(rawData,null,2), 'utf8', function (err) {
-	    if (err) {
-	        return console.log(err);
-	    }
-	}); 
-},120000)
+const testFolder = './data/';
+
+fs.readdirSync(testFolder).forEach(file => {
+	if (file.search('.json')>-1){
+		var rawData = JSON.parse(fs.readFileSync(`data/${file}`, 'utf8'));
+		rooms[file.replace('.json','')] = rawData
+	}
+	console.log('loaded:')
+	console.log(rooms)
+})
+
+setInterval(()=>{
+	Object.keys(rooms).forEach((r)=>{
+		fs.writeFile(`data/${r}.json`, JSON.stringify(rooms[r],null,2), 'utf8', function (err) {
+		    if (err) {
+		        return console.log(err);
+		    }
+		}); 
+	})
+},60000)
 
 
 app.get('/', (req, res) =>{
@@ -46,15 +62,15 @@ res.sendfile('test.html', { root: __dirname + "/assets" } );
 app.get('/cytodata', function(req, res) {
 
 	var useData = []
-	if (req.query.name && rawData[req.query.name]){
+	if (req.query.name && req.query.room && rooms[req.query.room].rawData[req.query.name]){
 			
-		useData = rawData[req.query.name]
+		useData = rooms[req.query.room].rawData[req.query.name]
 
 	}
 
 	if (req.query.name == 'returnall'){
-		Object.keys(rawData).forEach((k)=>{
-			rawData[k].forEach((t)=>{
+		Object.keys(rooms[req.query.room].rawData).forEach((k)=>{
+			rooms[req.query.room].rawData[k].forEach((t)=>{
 				useData.push(t)
 			})
 
@@ -195,9 +211,16 @@ app.post('/savedata', function(req, res) {
 	// console.log(req.body)
 	// console.log(req.query)
 
-	if (req.query.name){
-		rawData[req.query.name] = req.body
+	if (req.query.name && req.query.room){
+
+		if (!rooms[req.query.room]){
+			rooms[req.query.room] = {rawData:{}}
+		}
+
+		rooms[req.query.room].rawData[req.query.name] = req.body
 	}
+
+	console.log(rooms)
 
 	res.send('ok')
 
@@ -207,9 +230,14 @@ app.get('/getdata', function(req, res) {
 	// console.log(req.body)
 	// console.log(req.query)
 	var data = []
-	if (req.query.name && rawData[req.query.name]){
 
-		rawData[req.query.name].forEach((t)=>{
+	if (!rooms[req.query.room]){
+		rooms[req.query.room] = {rawData:{}}
+	}
+
+	if (req.query.room && req.query.name && rooms[req.query.room].rawData[req.query.name] ){
+
+		rooms[req.query.room].rawData[req.query.name].forEach((t)=>{
 			data.push([t.s,t.p,t.o])
 
 		})
@@ -239,8 +267,8 @@ app.get('/getalltriples', function(req, res) {
 	// console.log(req.query)
 
 	data = []
-	Object.keys(rawData).forEach((k)=>{
-		rawData[k].forEach((t)=>{
+	Object.keys(rooms[req.query.room].rawData).forEach((k)=>{
+		rooms[req.query.room].rawData[k].forEach((t)=>{
 			data.push([t.s,t.p,t.o])
 		})		
 
@@ -256,4 +284,4 @@ app.get('/getalltriples', function(req, res) {
 // app.post(/mydata)
 
 
-app.listen(80, () => console.log('Example app listening on port 3000!'))
+app.listen(3000, () => console.log('Example app listening on port 3000!'))

@@ -4798,5 +4798,225 @@
   {
     "name": "Relationship - Would Like To Know",
     "id": "http://purl.org/vocab/relationship/wouldLikeToKnow"
+  },
+  {
+    "id": "http://purl.org/dc/terms/abstract",
+    "name": "DC Terms - abstract"
+  },
+  {
+    "id": "http://purl.org/dc/terms/accessRights",
+    "name": "DC Terms - accessRights"
+  },
+  {
+    "id": "http://purl.org/dc/terms/accrualMethod",
+    "name": "DC Terms - accrualMethod"
+  },
+  {
+    "id": "http://purl.org/dc/terms/accrualPeriodicity",
+    "name": "DC Terms - accrualPeriodicity"
+  },
+  {
+    "id": "http://purl.org/dc/terms/accrualPolicy",
+    "name": "DC Terms - accrualPolicy"
+  },
+  {
+    "id": "http://purl.org/dc/terms/alternative",
+    "name": "DC Terms - alternative"
+  },
+  {
+    "id": "http://purl.org/dc/terms/audience",
+    "name": "DC Terms - audience"
+  },
+  {
+    "id": "http://purl.org/dc/terms/available",
+    "name": "DC Terms - available"
+  },
+  {
+    "id": "http://purl.org/dc/terms/bibliographicCitation",
+    "name": "DC Terms - bibliographicCitation"
+  },
+  {
+    "id": "http://purl.org/dc/terms/conformsTo",
+    "name": "DC Terms - conformsTo"
+  },
+  {
+    "id": "http://purl.org/dc/terms/contributor",
+    "name": "DC Terms - contributor"
+  },
+  {
+    "id": "http://purl.org/dc/terms/coverage",
+    "name": "DC Terms - coverage"
+  },
+  {
+    "id": "http://purl.org/dc/terms/created",
+    "name": "DC Terms - created"
+  },
+  {
+    "id": "http://purl.org/dc/terms/creator",
+    "name": "DC Terms - creator"
+  },
+  {
+    "id": "http://purl.org/dc/terms/date",
+    "name": "DC Terms - date"
+  },
+  {
+    "id": "http://purl.org/dc/terms/dateAccepted",
+    "name": "DC Terms - dateAccepted"
+  },
+  {
+    "id": "http://purl.org/dc/terms/dateCopyrighted",
+    "name": "DC Terms - dateCopyrighted"
+  },
+  {
+    "id": "http://purl.org/dc/terms/dateSubmitted",
+    "name": "DC Terms - dateSubmitted"
+  },
+  {
+    "id": "http://purl.org/dc/terms/description",
+    "name": "DC Terms - description"
+  },
+  {
+    "id": "http://purl.org/dc/terms/educationLevel",
+    "name": "DC Terms - educationLevel"
+  },
+  {
+    "id": "http://purl.org/dc/terms/extent",
+    "name": "DC Terms - extent"
+  },
+  {
+    "id": "http://purl.org/dc/terms/format",
+    "name": "DC Terms - format"
+  },
+  {
+    "id": "http://purl.org/dc/terms/hasFormat",
+    "name": "DC Terms - hasFormat"
+  },
+  {
+    "id": "http://purl.org/dc/terms/hasPart",
+    "name": "DC Terms - hasPart"
+  },
+  {
+    "id": "http://purl.org/dc/terms/hasVersion",
+    "name": "DC Terms - hasVersion"
+  },
+  {
+    "id": "http://purl.org/dc/terms/identifier",
+    "name": "DC Terms - identifier"
+  },
+  {
+    "id": "http://purl.org/dc/terms/instructionalMethod",
+    "name": "DC Terms - instructionalMethod"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isFormatOf",
+    "name": "DC Terms - isFormatOf"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isPartOf",
+    "name": "DC Terms - isPartOf"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isReferencedBy",
+    "name": "DC Terms - isReferencedBy"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isReplacedBy",
+    "name": "DC Terms - isReplacedBy"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isRequiredBy",
+    "name": "DC Terms - isRequiredBy"
+  },
+  {
+    "id": "http://purl.org/dc/terms/isVersionOf",
+    "name": "DC Terms - isVersionOf"
+  },
+  {
+    "id": "http://purl.org/dc/terms/issued",
+    "name": "DC Terms - issued"
+  },
+  {
+    "id": "http://purl.org/dc/terms/language",
+    "name": "DC Terms - language"
+  },
+  {
+    "id": "http://purl.org/dc/terms/license",
+    "name": "DC Terms - license"
+  },
+  {
+    "id": "http://purl.org/dc/terms/mediator",
+    "name": "DC Terms - mediator"
+  },
+  {
+    "id": "http://purl.org/dc/terms/medium",
+    "name": "DC Terms - medium"
+  },
+  {
+    "id": "http://purl.org/dc/terms/modified",
+    "name": "DC Terms - modified"
+  },
+  {
+    "id": "http://purl.org/dc/terms/provenance",
+    "name": "DC Terms - provenance"
+  },
+  {
+    "id": "http://purl.org/dc/terms/publisher",
+    "name": "DC Terms - publisher"
+  },
+  {
+    "id": "http://purl.org/dc/terms/references",
+    "name": "DC Terms - references"
+  },
+  {
+    "id": "http://purl.org/dc/terms/relation",
+    "name": "DC Terms - relation"
+  },
+  {
+    "id": "http://purl.org/dc/terms/replaces",
+    "name": "DC Terms - replaces"
+  },
+  {
+    "id": "http://purl.org/dc/terms/requires",
+    "name": "DC Terms - requires"
+  },
+  {
+    "id": "http://purl.org/dc/terms/rights",
+    "name": "DC Terms - rights"
+  },
+  {
+    "id": "http://purl.org/dc/terms/rightsHolder",
+    "name": "DC Terms - rightsHolder"
+  },
+  {
+    "id": "http://purl.org/dc/terms/source",
+    "name": "DC Terms - source"
+  },
+  {
+    "id": "http://purl.org/dc/terms/spatial",
+    "name": "DC Terms - spatial"
+  },
+  {
+    "id": "http://purl.org/dc/terms/subject",
+    "name": "DC Terms - subject"
+  },
+  {
+    "id": "http://purl.org/dc/terms/tableOfContents",
+    "name": "DC Terms - tableOfContents"
+  },
+  {
+    "id": "http://purl.org/dc/terms/temporal",
+    "name": "DC Terms - temporal"
+  },
+  {
+    "id": "http://purl.org/dc/terms/title",
+    "name": "DC Terms - title"
+  },
+  {
+    "id": "http://purl.org/dc/terms/type",
+    "name": "DC Terms - type"
+  },
+  {
+    "id": "http://purl.org/dc/terms/valid",
+    "name": "DC Terms - valid"
   }
 ]
