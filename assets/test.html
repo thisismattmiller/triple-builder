@@ -25,7 +25,9 @@
         width: 100%;
         background-color: whitesmoke;
     }
-
+    #all-triples{
+        display: none;
+    }
 
     #cyAll{
 
@@ -58,7 +60,7 @@
     <div id="login-form">
     <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Username">
+        <input id="email" type="email" autofocus class="form-control" name="email" value="" placeholder="Username">
         <input id="room" type="room" class="form-control" name="room" value="" placeholder="Room Name">                                        
          <button id="login-button" class="btn btn-primary">Start</button>
     </div>
@@ -68,37 +70,40 @@
 
 </div>
 <div id="content">
-<!--     <div id="menu">
-        <button type="button" class="btn btn-primary">Your Triples</button>
-        <button type="button" class="btn btn-success">All Triples</button>
-    </div>
+    <div id="menu">
+        <button type="button" id="your-triples-button" class="btn btn-primary active">Your Triples <span id="your-triples-count"></span></button>
+        <button type="button" id="all-triples-button" class="btn btn-success">All Triples <span id="all-triples-count"></span></button>
 
-    <hr> -->
-    <h5>Add Triples:</h5>
-    <div id="my"></div>
-    <button id="button-add-row">Add Row</button>
-
-
-    <div>Docs: <a href="https://www.w3.org/TR/rdf-schema/" target="_blank">RDF/s</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">FOAF</a>, <a href="https://www.w3.org/2009/08/skos-reference/skos.html" target="_blank">SKOS</a>, <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">Bibframe</a>, <a href="http://purl.org/vocab/relationship/" target="_blank">Relationships</a>, <a href="http://dublincore.org/documents/dcmi-terms/" target="_blank">Dublin Core Terms</a></div>
-    <code><pre><div id="triples"></div></pre></code>
-    <div id="cy"></div>
+        <div class="float-right" id="room-name">yooo</div>
     <hr>
-    <h3>All Triples</h3>
-    <button id="cy-all">Refresh</button>
-    <div id="cyAll"></div>
-    <code><pre><div id="triples-all"></div></pre></code>
+    </div>
+    
+    <div id="your-triples">
+        <h5>Add Triples:</h5>
+        <div id="my"></div>
+        <button id="button-add-row">Add Row</button>
+
+
+        <div>Docs: <a href="https://www.w3.org/TR/rdf-schema/" target="_blank">RDF/s</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">FOAF</a>, <a href="https://www.w3.org/2009/08/skos-reference/skos.html" target="_blank">SKOS</a>, <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">Bibframe</a>, <a href="http://purl.org/vocab/relationship/" target="_blank">Relationships</a>, <a href="http://dublincore.org/documents/dcmi-terms/" target="_blank">Dublin Core Terms</a></div>
+        <code><pre><div id="triples"></div></pre></code>
+        <div id="cy"></div>
+    </div>
+    <div id="all-triples">
+        <h3>All Triples</h3>
+        <code><pre><div id="triples-all"></div></pre></code>
+        <button id="cy-all">Refresh</button>
+        <div id="cyAll"></div>
+    </div>
+    
 </div>
 
 
 <script>
 
-    var saveData = function(){
 
+    var updateYourTriples = function(){
         var data = $('#my').jexcel('getData', false);
-        var errors = "";
         var triples = "";
-        var postData = []
-
         for (var d in data){
             var s = data[d][0];
             var p = data[d][1];
@@ -121,13 +126,32 @@
             }
             
             triples = triples + triple + '<br>';
-            postData.push({s:s,p:p,o:o})
 
 
         }
         triples = '<h5>Your Triples:</h5>' + triples
         $("#triples").html(triples);
 
+    }
+
+    var saveData = function(){
+
+        var data = $('#my').jexcel('getData', false);
+        var errors = "";
+        var triples = "";
+        var postData = []
+
+
+        $("#your-triples-count").html('('+data.length+")")
+        for (var d in data){
+            var s = data[d][0];
+            var p = data[d][1];
+            var o = data[d][2];
+            postData.push({s:s,p:p,o:o})
+
+        }
+
+        
         doCy()
 
         $.ajax({
@@ -137,7 +161,8 @@
             data:JSON.stringify(postData),
             contentType:"application/json; charset=utf-8",
             success:function(response) {
-             console.log(response)
+             
+             updateYourTriples()
            },
            error:function(){
             alert("error");
@@ -254,6 +279,55 @@
     }
 
 
+    var updateAllTriples = function(){
+
+        $.getJSON( "/getalltriples", { name: 'returnall', room: window.roomname} )
+          .done(function( data ) {
+
+
+            var triples = ""
+
+            $("#all-triples-count").html('('+data.length+")")
+
+            for (var d in data){
+                var s = data[d][0];
+                var p = data[d][1];
+                var o = data[d][2];
+                triple = "";
+
+                if (s.trim().length === 0 || p.trim().length === 0 || o.trim().length === 0){
+                    continue
+                }
+
+                triple = '&lt;' + s + '&gt; ' + '&lt;' + p + '&gt; '
+
+                if (o.search('http://') === -1 && o.search('https://') === -1){
+                    // it is a literal
+                    o = o.replace(/"/g,"'");
+                    o = '"' + o + '"';
+                    triple = triple + ' ' + o + ' .';
+                }else{
+                    triple = triple + '&lt;' + o + '&gt; . ';
+                }
+                
+                triples = triples + triple + '<br>';
+
+
+
+            }
+            triples = '<h5>All NT Triples:</h5>' + triples
+            $("#triples-all").html(triples);
+
+
+          })
+          .fail(function( jqxhr, textStatus, error ) {
+            var err = textStatus + ", " + error;
+            console.log( "Request Failed: " + err );
+        });
+
+    }
+
+
     var doCyAll = function(){
 
         $.getJSON( "/cytodata", { name: 'returnall', room: window.roomname} )
@@ -332,65 +406,12 @@
 
 
 
-        $.getJSON( "/getalltriples", { name: 'returnall', room: window.roomname} )
-          .done(function( data ) {
-
-
-            var triples = ""
-
-
-
-            for (var d in data){
-                var s = data[d][0];
-                var p = data[d][1];
-                var o = data[d][2];
-                triple = "";
-
-                if (s.trim().length === 0 || p.trim().length === 0 || o.trim().length === 0){
-                    continue
-                }
-
-                triple = '&lt;' + s + '&gt; ' + '&lt;' + p + '&gt; '
-
-                if (o.search('http://') === -1 && o.search('https://') === -1){
-                    // it is a literal
-                    o = o.replace(/"/g,"'");
-                    o = '"' + o + '"';
-                    triple = triple + ' ' + o + ' .';
-                }else{
-                    triple = triple + '&lt;' + o + '&gt; . ';
-                }
-                
-                triples = triples + triple + '<br>';
-
-
-
-            }
-            triples = '<h5>All NT Triples:</h5>' + triples
-            $("#triples-all").html(triples);
-
-
-
-
-
-            // cy.on('click', 'node', function(evt){
-            //       console.log(   );
-            // });
-
-
-
-
-          })
-          .fail(function( jqxhr, textStatus, error ) {
-            var err = textStatus + ", " + error;
-            console.log( "Request Failed: " + err );
-        });
-
-
-
-
-
     }
+
+    window.setInterval(updateAllTriples,60000);
+
+
+
 
     $("#button-add-row").click(function(event){
         $('#my').jexcel('insertRow', 1);
@@ -399,11 +420,21 @@
        doCyAll()
     })
 
-
-
     $('#login-button').click(function(event){
         login();
     })
+
+    $('#your-triples-button').click(function(event){
+        $("#all-triples").hide()
+        $("#your-triples").show()
+    })
+    $('#all-triples-button').click(function(event){
+        doCyAll()
+        updateAllTriples()
+        $("#all-triples").show()
+        $("#your-triples").hide()
+    })
+
 
    $('#email').on('keypress', function (e) {
          if(e && e.which === 13){
@@ -421,12 +452,15 @@
        window.roomname = $("#room").val()
        if ( window.username && window.username.length > 0 && window.roomname && window.roomname.length > 0){
            $('#login').toggle()
-           $('#content').toggle()        
+           $('#content').toggle()  
+           $("#room-name").html('<strong>Room:</strong> '+window.roomname + ' - ' + '<strong>User:</strong> '+window.username)
+                
 
 
             $.getJSON( "/getdata", { name: window.username, room: window.roomname } )
               .done(function( data ) {
 
+                $("#your-triples-count").html('('+data.length+")")
 
                 $('#my').jexcel({
                     data:data,
@@ -444,6 +478,8 @@
                 });
 
                 doCy()
+                setTimeout(updateYourTriples,500);
+                updateAllTriples()
 
 
               })
@@ -453,7 +489,7 @@
             });
 
        }else{
-        alert('bad username')
+        alert('bad username or roomname')
        }
 
     }
@@ -480,9 +516,10 @@
               "label": "data(label)",
               "width": 3,
               "line-color": "#ccc",
-            'target-arrow-shape': 'triangle',
-            'target-arrow-color': '#9dbaea',
-
+              "mid-target-arrow-shape": "triangle",
+              "mid-target-arrow-color": "#ccc",
+              "mid-target-arrow-fill" : "filled",
+              "arrow-scale" : 3
             }
           },
 

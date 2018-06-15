@@ -62,6 +62,10 @@ res.sendfile('test.html', { root: __dirname + "/assets" } );
 app.get('/cytodata', function(req, res) {
 
 	var useData = []
+	if (req.query.room) req.query.room = req.query.room.toLowerCase()
+	if (req.query.name) req.query.name = req.query.name.toLowerCase()
+
+
 	if (req.query.name && req.query.room && rooms[req.query.room].rawData[req.query.name]){
 			
 		useData = rooms[req.query.room].rawData[req.query.name]
@@ -100,7 +104,7 @@ app.get('/cytodata', function(req, res) {
 			})
 			
 		}else{
-			console.log(t.s,'s bad')
+			// console.log(t.s,'s bad')
 			return
 		}
 
@@ -113,10 +117,10 @@ app.get('/cytodata', function(req, res) {
 
 			})
 
-			console.log('------\n\n\n')
+			// console.log('------\n\n\n')
 			
 		}else{
-			console.log(t.p,'p bad')
+			// console.log(t.p,'p bad')
 			return
 		}
 
@@ -195,8 +199,8 @@ app.get('/cytodata', function(req, res) {
 
 
 	// console.log(useData)
-	console.log(JSON.stringify(entities,null,2))
-	console.log(JSON.stringify(cytoData,null,2))
+	// console.log(JSON.stringify(entities,null,2))
+	// console.log(JSON.stringify(cytoData,null,2))
 
 
     res.setHeader('Content-Type', 'application/json');
@@ -208,10 +212,13 @@ app.get('/cytodata', function(req, res) {
 });
 app.post('/savedata', function(req, res) {
 
-	// console.log(req.body)
-	// console.log(req.query)
+	if (req.query.room) req.query.room = req.query.room.toLowerCase()
+	if (req.query.name) req.query.name = req.query.name.toLowerCase()
+
 
 	if (req.query.name && req.query.room){
+
+		req.query.room = req.query.room.toLowerCase()
 
 		if (!rooms[req.query.room]){
 			rooms[req.query.room] = {rawData:{}}
@@ -220,7 +227,7 @@ app.post('/savedata', function(req, res) {
 		rooms[req.query.room].rawData[req.query.name] = req.body
 	}
 
-	console.log(rooms)
+	// console.log(rooms)
 
 	res.send('ok')
 
@@ -230,6 +237,10 @@ app.get('/getdata', function(req, res) {
 	// console.log(req.body)
 	// console.log(req.query)
 	var data = []
+	if (req.query.room) req.query.room = req.query.room.toLowerCase()
+	if (req.query.name) req.query.name = req.query.name.toLowerCase()
+
+
 
 	if (!rooms[req.query.room]){
 		rooms[req.query.room] = {rawData:{}}
@@ -267,6 +278,9 @@ app.get('/getalltriples', function(req, res) {
 	// console.log(req.query)
 
 	data = []
+	if (req.query.room) req.query.room = req.query.room.toLowerCase()
+	
+
 	Object.keys(rooms[req.query.room].rawData).forEach((k)=>{
 		rooms[req.query.room].rawData[k].forEach((t)=>{
 			data.push([t.s,t.p,t.o])
