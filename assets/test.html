@@ -120,6 +120,10 @@
                 // it is a literal
                 o = o.replace(/"/g,"'");
                 o = '"' + o + '"';
+                o = o.replace(/"'/g,"\"");
+                o = o.replace(/'"/g,"\"");
+                o = o.replace(/''/g,"");
+
                 triple = triple + ' ' + o + ' .';
             }else{
                 triple = triple + '&lt;' + o + '&gt; . ';
@@ -305,6 +309,10 @@
                     // it is a literal
                     o = o.replace(/"/g,"'");
                     o = '"' + o + '"';
+                o = o.replace(/"'/g,"\"");
+                o = o.replace(/'"/g,"\"");
+                o = o.replace(/''/g,"");
+                    
                     triple = triple + ' ' + o + ' .';
                 }else{
                     triple = triple + '&lt;' + o + '&gt; . ';
