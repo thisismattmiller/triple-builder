@@ -332,7 +332,8 @@ var setShareId = function(id){
           $("#share-create").hide()
           $("#share-edit").show()
           window.shareId = response;
-          setShareLink(window.shareId)
+          setShareLink(window.shareId);
+          saveData();
           saveCyImage();
         }
 
