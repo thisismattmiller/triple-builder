@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+
+$green: #70c041;
+$red: #ec5d57;
+
+@import "bulma-0.7.1/bulma.sass";
+
+
+
+#sheetHolder{
+	margin-bottom:20px;
+
+
+}
+#sheet-mint{
+	padding-left:35px;
+}
+
+.hero-block-text{
+	min-height:5em;
+}
+
+
+#your-graph{
+    height: 750px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.canvas-display{
+  position:absolute !important;
+  left:-1000 !important;
+  top:-1000 !important;
+  display:block !important;
+}
+
+pre{
+  margin-bottom: 2em;
+}
+
+#share-shareid{
+  display: inline;
+}
+.content-area{
+  display: none;
+  margin-bottom: 200px;
+}
+#share-text{
+  font-family: monospace;
+}
+#share-img-preview{
+height: 400px;
+width: auto;
+border: solid 1px lightgray;
+border-radius: 10px;
+}
+
+.tab-icon{
+  height: 25px;
+  width: auto;
+  padding-right: 5px;
+}
+#edit-url{
+  width: 400px;
+  font-size: smaller;        
+}

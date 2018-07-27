@@ -1,0 +1,223 @@
+<html>
+<head>
+<script src="/assets/jquery.min.js"></script>
+
+<script src="/assets/jquery.jexcel.js"></script>
+<script src="/assets/cytoscape.min.js"></script>
+<!-- <script src="/assets/jquery.qtip.js"></script> -->
+<!-- <script src="/assets/cytoscape-qtip.js"></script> -->
+<script src="/assets/cytoscape-cose-bilkent.js"></script>
+<script src="/assets/main.js"></script>
+
+<link rel="stylesheet" href="/assets/main.css" type="text/css" />
+<link rel="stylesheet" href="/assets/jquery.qtip.css" type="text/css" />
+<link rel="stylesheet" href="/assets/jquery.jexcel.min.css" type="text/css" />
+
+
+
+<script>
+  window.subsetID = '{{uuid}}';
+  window.graphData = {{{dataJson}}};
+  window.firstLoad = true;
+  window.shareId = {{{shareId}}};
+  window.nodePositions = {{{layoutPref}}};
+  window.nodePositionsLock = {{{lockPos}}};
+  window.graphImage = null;
+</script>
+
+
+
+</head>
+
+
+
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/assets/triple_green.png" alt="Logo"  height="28">
+    </a>
+    <span class="navbar-item">
+      Subset - Edit
+    </span>
+    <div class="field navbar-item">
+      <div class="control">
+        <input alt="You need this URL to edit later" title="You need this URL to edit later" id="edit-url" class="input" type="text" placeholder="Normal input">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="content">
+    <div id="sheetHolder">
+      <div id="myTriplesSheet"></div>
+      <a id="sheet-mint" class="is-size-7" target="_blank" href="http://sandbase.semlab.io/wiki/Special:NewItem">Need a subject URI? You can mint one in semlab's sandbox.</a>
+
+      <div class="field is-pulled-right is-size-7">
+        <div class="control">
+          <div class="select is-small">
+            <select id="example-dropdown">
+              <option>Examples</option>
+              <option>FOAF Example</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <hr/>
+    
+
+    <div class="tabs is-boxed is-centered is-medium">
+      <ul>
+        <li class="is-active" id="tab-graph-li">
+          <a class="tab-link" data-target="your-graph">
+            <img src="/assets/graph.png" class="tab-icon" alt="Logo">
+            <span>Your Graph</span>
+          </a>
+        </li>
+        <li id="tab-triples-li">
+          <a class="tab-link" data-target="triples">
+            <img src="/assets/rdf.png" class="tab-icon" alt="Logo">
+            <span>Triples</span>
+          </a>
+        </li>
+        <li>
+          <a class="tab-link" data-target="vocabs">
+            <img src="/assets/vocabs.png" class="tab-icon" alt="Logo">
+            <span>Vocabs</span>
+          </a>
+        </li>
+        <li id="tab-share-li"> 
+          <a class="tab-link" data-target="share">
+            <img src="/assets/share.png" class="tab-icon" alt="Logo">
+            <span>Share</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="content-area container" id="your-graph">
+
+
+    </div>
+
+    <div class="content-area container" id="triples">
+      <h3 class="subtitle is-5">N-Triples</h3>
+      <pre><code id="triples-nt">
+
+      </code></pre>
+      <h3 class="subtitle is-5">Turtle</h3>
+      <pre><code id="triples-ttl">
+
+      </code></pre>
+      <h3 class="subtitle is-5">JSON-LD</h3>
+      <pre><code id="triples-json">
+
+      </code></pre>
+    </div>
+
+    <div class="content-area container" id="vocabs">
+
+      <table class="table is-striped is-hoverable">
+            <thead>
+              <tr>
+                <th>Enabled</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Documentation</th>
+                <th>Namespace</th>
+                <th>Prefix</th>
+                <th>Classes</th>
+                <th>Properties</th>
+              </tr>
+            </thead>
+            <tbody id="vocab-table">
+
+
+            </tbody>
+          </table>
+
+          Want to include a vocabulary in this list? <a href="https://github.com/thisismattmiller/triple-builder/issues">Open an issue</a> with links to source and documentation.
+
+
+    </div>
+
+    <div class="content-area container" id="share">
+
+      <div id="share-create">
+        <p>You can share a read-only version of this page with an additonal note. You need to select a URL to share with. Below is one suggested but you can customize it using letters, numbers, underscores and hyphens.</p>
+          <div style="display: none" id="share-shareid-error" class="notification is-warning">
+            <button class="delete"></button>
+            Sorry that URL is already taken please pick something else.
+          </div>
+          <div class="is-pulled-left is-size-3">http://tb.semlab.io/share/</div>
+          <div class="is-pulled-left">
+            <div class="field">
+              <div class="control is-medium">
+                <input id="share-shareid" class="input is-medium" type="text" autofocus placeholder="Enter the Share URL">              
+              </div>
+            </div>   
+          </div>
+          <div class="is-pulled-left">
+            &nbsp;
+            <a class="button is-medium is-primary" id="share-shareid-set">Okay, use this URL</a>
+          </div>
+      </div>
+      <div id="share-edit">
+
+        <h3 class="subtitle is-5">Shareable Link</h3>
+        <div><span>You can share this link: </span><a href="" id="share-link"></a></div>
+        <hr>
+
+        <h3 class="subtitle is-5">Add a Note</h3>
+
+        <textarea class="textarea" id="share-text" placeholder="You can write a note or give examples that will contextualize your graph here, it will appear as monospace font on the share page." rows="10"></textarea>
+        <hr>
+
+        <h3 class="subtitle is-5">Graph Network Display</h3>
+        If you have arranged the nodes on the graph page to your satifaction you can lock them into place.<br>
+        They will be presented as they look on the Your Graph tab.<br>
+        <label class="checkbox">
+          <input id="share-lock-nodes" type="checkbox">
+          Lock node positions
+        </label>
+
+        <hr>
+
+
+        <h3 class="subtitle is-5">Twitter Card</h3>
+        <div class="columns">
+          <div class="column is-half"><img id="share-img-preview"></div>
+          <div class="column">This is the preview image that will appear if posted on social media like Twitter. Adjusting the node's postions and zoom level on the "Your Graph" page will update the preview.</div>
+        </div>
+        <hr>
+        <h3 class="subtitle is-5">Data Access</h3>
+        <p>You can access the raw RDF in various serializations directly using these links:</p>
+        <div><span>N-Triples: </span><a href="" id="share-link-nt"></a></div>
+        <div><span>Turtle: </span><a href="" id="share-link-ttl"></a></div>
+        <div><span>JSON-LD: </span><a href="" id="share-link-jsonld"></a></div>
+
+
+        
+      </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Triple Builder</strong> by <a href="http://semlab.io">Semantic Labs</a>.
+    </p>
+  </div>
+</footer>
+
+
+</html>

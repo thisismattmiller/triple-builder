@@ -1,0 +1,95 @@
+<html>
+<head>
+<script src="/assets/jquery.min.js"></script>
+
+<script src="/assets/cytoscape.min.js"></script>
+<script src="/assets/cytoscape-cose-bilkent.js"></script>
+<script src="/assets/share.js"></script>
+
+<link rel="stylesheet" href="/assets/main.css" type="text/css" />
+
+
+<script>
+  window.graphData = {{{dataJson}}};
+  window.shareId = {{{shareId}}};
+  window.shareMd5 = '{{{uuid}}}';
+  window.nodePositions = {{{layoutPref}}};
+  window.nodePositionsLock = {{{lockPos}}};
+
+</script>
+
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:url" content="http://tb.semlab.io/share/{{{shareIdRaw}}}" />
+<meta property="og:title" content="A shared RDF graph" />
+<meta property="og:description" content="{{{text}}}" />
+<meta property="og:image" content="http://tb.semlab.io/shareimg/{{{uuid}}}.png" />
+
+
+</head>
+
+
+
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/assets/triple_green.png" alt="Logo"  height="28">
+    </a>
+    <span class="navbar-item">
+      <span>Subset - Share | </span><span>&nbsp;Want to edit this graph?&nbsp;</span><a href="/fork/{{{shareIdRaw}}}" class="button is-small">Fork Subset</a>
+    </span>
+
+  </div>
+</nav>
+
+
+
+
+<div id="content">
+
+    <div class="container" id="triples">
+      <h3 class="subtitle is-5">Note</h3>
+
+      <pre ><code  id="triples-nt">{{text}}</code></pre>
+      <hr/>
+    </div>
+
+    
+
+    <div  class="container">
+      <h3 class="subtitle is-5">Graph</h3>
+      <div id="your-graph">
+
+
+      </div>
+      <hr/>
+    </div>
+
+
+
+    <div class="container" id="triples">
+      <h3 class="subtitle is-5">N-Triples <a href="http://tb.semlab.io/share/{{{shareIdRaw}}}.nt" style="font-size: small;">[link]</a></h3>
+      <pre><code id="triples-nt">{{data.rdf.nt}}</code></pre>
+
+      <h3 class="subtitle is-5">Turtle <a href="http://tb.semlab.io/share/{{{shareIdRaw}}}.ttl" style="font-size: small;">[link]</a></h3>
+      <pre><code id="triples-ttl">{{data.rdf.ttl}}</code></pre>
+      <h3 class="subtitle is-5">JSON-LD <a href="http://tb.semlab.io/share/{{{shareIdRaw}}}.jsonld" style="font-size: small;">[link]</a></h3>
+      <pre><code id="triples-json">{{jsonld}}</code></pre>
+
+    </div>
+
+
+</div>
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Triple Builder</strong> by <a href="http://semlab.io">Semantic Labs</a>.
+    </p>
+  </div>
+</footer>
+
+
+
+</html>

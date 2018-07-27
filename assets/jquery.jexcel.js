@@ -261,6 +261,9 @@ var methods = {
                             console.error('It was not possible to load the url: ' + this.url);
                         }
                     }));
+                }else if ($.fn.jexcel.defaults[id].columns[i].cache) {
+
+                    $.fn.jexcel.defaults[id].columns[i].source = $.fn.jexcel.defaults[id].columns[i].cache
                 }
             } else if ($.fn.jexcel.defaults[id].columns[i].type == 'calendar') {
                 // Default format for date columns
@@ -1692,7 +1695,7 @@ var methods = {
                                 } else if (source) {
                                     showResult(source, str);
                                 }
-                            }, 500);
+                            }, 50);
                         }
                     });
 
@@ -1705,9 +1708,16 @@ var methods = {
                     $(editor).val(html);
 
 
+
+
+
+
+
+
                     // Close editor handler
                     $(editor).blur(function () {
-                        $(main).jexcel('closeEditor', $(cell), false);
+                        
+                        $(main).jexcel('closeEditor', $(cell), true);
                     });
                 } else {
                     // Keep the current value
@@ -1801,8 +1811,6 @@ var methods = {
                         var value = $(obj).prop('id');
                     } else {
                         var value = $(cell).find('input').val();
-
-                        console.log(value);
                     }
                 } else if (options.columns[position[0]].type == 'calendar') {
                     var value = $(cell).find('.jcalendar_value').val();
@@ -2125,7 +2133,7 @@ var methods = {
                             // val = null;
                             val = value
                         }
-                        console.log('val =',val)
+                        // console.log('val =',val)
                     }
 
                     if (! val) {

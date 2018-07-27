@@ -5,6 +5,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 data/*
+.DS_Store
+
+subsets
+subsetsshare
+subsetsshareimages
+assets/.sass-cache
 
 # Runtime data
 pids

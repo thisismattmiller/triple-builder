@@ -20,6 +20,15 @@
   },
   "homepage": "https://github.com/thisismattmiller/new-triple-builder#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mustache-express": "^1.2.7",
+    "n3": "^1.0.0-beta.1",
+    "node-cache": "^4.2.0",
+    "rdf-ext": "^1.1.0",
+    "rdf-formats-common": "^1.4.0",
+    "rdf-serializer-n3": "^1.0.0",
+    "rdf-serializer-ntriples": "^1.0.0",
+    "shortid": "^2.2.12",
+    "uuid": "^3.3.2"
   }
 }
