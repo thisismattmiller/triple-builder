@@ -87,7 +87,7 @@ var loadSubset = function(uuid, callback){
 				    	shareId: null,
 				    	type: 'subset'
 				    }							        
-		        fs.writeFile(`${subsetGraphDir}${uuid}.json`, JSON.stringify(newSubset));
+		        fs.writeFile(`${subsetGraphDir}${uuid}.json`, JSON.stringify(newSubset), ()=>{});
 		        callback(null,newSubset)
 		    } else {
 		        console.log('Some other error: ', err.code);
