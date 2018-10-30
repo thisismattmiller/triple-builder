@@ -162,7 +162,28 @@ vocabs = {
 		'properties' : [],
 		'namespace' : 'https://linked.art/ns/terms/',
 		'prefix'  : 'la'
+		},
+	'linked-art.json' : {
+		'name':'Linked Art',
+		'doc':'http://linked.art/',
+		'group':'Art',
+		'classes' : [],
+		'properties' : [],
+		'namespace' : 'https://linked.art/ns/terms/',
+		'prefix'  : 'la'
+		},
+	'mads.rdf' : {
+		'name':'MADS',
+		'doc':'http://www.loc.gov/standards/mads/rdf/',
+		'group':'Biblographic',
+		'classes' : [],
+		'properties' : [],
+		'namespace' : 'http://www.loc.gov/mads/rdf/v1#',
+		'prefix'  : 'mads'
 		}
+
+
+
 }
 
 
