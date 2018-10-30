@@ -193,9 +193,7 @@ var buildPrefixLookup = function(){
   // window.prefixLookup['isni'] = 'http://www.isni.org/isni/'
   window.prefixLookup['wd'] = 'https://www.wikidata.org/entity/'
   window.prefixLookup['example'] = 'http://www.example.com/'
-  window.prefixLookup['example'] = 'https://www.example.com/'
   window.prefixLookup['fake'] = 'http://www.fake.com/'
-  window.prefixLookup['fake'] = 'https://www.fake.com/'
   window.prefixLookup['dc'] = 'https://www.fake.com/'
 
 
