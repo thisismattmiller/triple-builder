@@ -180,6 +180,15 @@ vocabs = {
 		'properties' : [],
 		'namespace' : 'http://www.loc.gov/mads/rdf/v1#',
 		'prefix'  : 'mads'
+		},
+	'musicontology.rdf' : {
+		'name':'Music Ontology',
+		'doc':'http://purl.org/ontology/mo/',
+		'group':'Biblographic',
+		'classes' : [],
+		'properties' : [],
+		'namespace' : 'http://purl.org/ontology/mo/',
+		'prefix'  : 'mo'
 		}
 
 
