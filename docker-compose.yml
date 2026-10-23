@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    image: triple-builder
+    container_name: triple-builder
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:7300:3000"
+    volumes:
+      # JSON graph store + share records + share preview PNGs (must be owned by uid 1000)
+      - ./data/subsets:/app/subsets
+      - ./data/subsetsshare:/app/subsetsshare
+      - ./data/subsetsshareimages:/app/subsetsshareimages
+    environment:
+      - NODE_ENV=production
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 512m

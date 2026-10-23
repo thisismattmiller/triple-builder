@@ -574,6 +574,12 @@ app.get('/share/:shareId\.:ext?', function (req, res) {
 		return false
 	}
 	loadShare(uuid,(err,results)=>{
+		// unknown share id (or a share that was deleted): 404 instead of crashing the process
+		if (err || !results || !results.rdf){
+			res.status(404);
+			res.send("Share not found")
+			return false
+		}
 		// if (req.params.ext === 'json'){
 		//     res.setHeader('Content-Type', 'application/json');
 		//     res.send(results.rdf.json);

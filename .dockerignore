@@ -1,0 +1,12 @@
+.git
+node_modules
+subsets
+subsetsshare
+subsetsshareimages
+data
+assets/.sass-cache
+*.log
+.env
+.DS_Store
+Dockerfile
+docker-compose.yml
