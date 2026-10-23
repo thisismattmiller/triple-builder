@@ -32,7 +32,7 @@
     "rdf-serializer-ntriples": "^1.0.0",
     "readable-stream": "^2.3.6",
     "shortid": "^2.2.12",
-    "uuid": "^3.3.2"
+    "uuid": "^14.0.0"
   },
   "engines": {
     "node": ">=24"
